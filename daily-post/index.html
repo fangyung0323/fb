@@ -43,6 +43,9 @@
             text-decoration: none;
             font-weight: 500;
             transition: transform 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
         }
         .category-btn:hover {
             transform: translateY(-2px);
@@ -79,33 +82,75 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
-        .article-list {
+        /* 最新文章完整顯示 */
+        .latest-article {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .latest-category {
+            display: inline-block;
+            background: #4a7c59;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        .latest-title {
+            font-size: 1.8rem;
+            color: #2c5e2e;
+            margin-bottom: 0.5rem;
+        }
+        .latest-date {
+            color: #7f8c6d;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .latest-content {
+            line-height: 1.8;
+            color: #2c3e2f;
+        }
+        .latest-content p {
+            margin: 1rem 0;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #4a7c59;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        /* 過往文章列表 */
+        .past-list {
             list-style: none;
             padding: 0;
         }
-        .article-item {
+        .past-item {
             margin-bottom: 1rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid #f0e8e0;
         }
-        .article-link {
-            font-size: 1rem;
+        .past-link {
+            font-size: 0.95rem;
             font-weight: 500;
             color: #4a7c59;
             text-decoration: none;
             display: block;
         }
-        .article-link:hover {
+        .past-link:hover {
             text-decoration: underline;
         }
-        .article-meta {
-            font-size: 0.75rem;
+        .past-meta {
+            font-size: 0.7rem;
             color: #aaa;
             margin-top: 0.25rem;
         }
-        .category-badge {
+        .past-badge {
             display: inline-block;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             padding: 0.1rem 0.5rem;
             border-radius: 12px;
             color: white;
@@ -145,6 +190,9 @@
             .main-layout {
                 flex-direction: column;
             }
+            .latest-title {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
@@ -156,52 +204,66 @@
         </div>
         
         <div class="categories">
-            <a href="#" class="category-btn category-all" onclick="filterArticles('all')">📋 全部</a>
-            <a href="#" class="category-btn category-植物" onclick="filterArticles('植物')">📌 植物</a>
-            <a href="#" class="category-btn category-永續" onclick="filterArticles('永續')">📌 永續</a>
-            <a href="#" class="category-btn category-碳盤查" onclick="filterArticles('碳盤查')">📌 碳盤查</a>
-            <a href="#" class="category-btn category-生活" onclick="filterArticles('生活')">📌 生活</a>
+            <button class="category-btn category-all" onclick="filterPastArticles('all')">📋 全部</button>
+            <button class="category-btn category-植物" onclick="filterPastArticles('植物')">📌 植物</button>
+            <button class="category-btn category-永續" onclick="filterPastArticles('永續')">📌 永續</button>
+            <button class="category-btn category-碳盤查" onclick="filterPastArticles('碳盤查')">📌 碳盤查</button>
+            <button class="category-btn category-生活" onclick="filterPastArticles('生活')">📌 生活</button>
+
         </div>
         
         <div class="main-layout">
             <div class="content-area">
-                <div class="section-title">📖 最新文章</div>
-                <ul class="article-list" id="article-list">
+                <!-- 最新文章：完整顯示 -->
+                <div class="latest-article">
+                    <div class="latest-category">📌 植物</div>
+                    <h1 class="latest-title">植物界的沉默魔術師：它們如何悄悄改變你的生活？</h1>
+                    <div class="latest-date">📅 2026-03-26</div>
+                    <div class="latest-content">
+                        
+        ### 植物界的沉默魔術師：它們如何悄悄改變你的生活？<br><br>你是否曾停下腳步，欣賞路邊一朵野花的綻放，或感受過家中盆栽帶來的那份寧靜？植物，這些看似靜默的生命體，其實正以驚人的方式與世界互動，並深深影響著我們的身心靈。<br><br>**無聲的生存智慧**<br><br>植物無法移動，卻演化出令人驚嘆的生存策略。含羞草被觸碰時迅速閉合葉片，是為了嚇阻草食動物；沙漠中的仙人掌將葉子退化成針狀，以減少水分蒸散；而牽牛花隨著日光攀爬，則是為了爭取更多陽光。它們不靠聲音或動作溝通，卻能透過釋放化學物質警告鄰近同伴病蟲害的來襲，展現出複雜的「植物社交網絡」。這種靜默中的韌性與智慧，正是植物最迷人的生態魅力。<br><br>**居家綠手指的實用指南**<br><br>想在室內成功養植綠意，關鍵在於「模仿自然」。首先，**了解你的光線**：朝南窗戶適合需要充足陽光的開花植物（如非洲堇）；耐陰的虎尾蘭、黃金葛則能點亮昏暗角落。其次，**澆水不如澆「對」水**：多數植物死亡源於過度澆水。建議觸摸土壤表面下約2公分，乾燥後再澆透，並確保盆底排水順暢。最後，**定期清潔葉面**，不僅讓植物更好進行光合作用，也能預防病蟲害。記得，每株植物都是獨特的，觀察它生長的反應，比嚴格遵循澆水日程更重要。<br><br>**療癒身心的綠色力量**<br><br>研究證實，與植物相處能降低壓力指數、提升專注力與創造力。這不僅是因為綠色能舒緩視覺疲勞，更因為照顧生命的過程賦予我們成就感與責任感。陽台上的香草盆栽如迷迭香、薄荷，既可觀賞又能入菜，連結起五感體驗。臥室裡的一盆蘆薈或常春藤，能在夜間釋放氧氣，改善空氣品質與睡眠環境。植物以它們的存在，提醒我們放慢步調，回歸當下。<br><br>從宏觀的生態貢獻到微觀的個人療癒，植物始終是我們最沉靜卻有力的夥伴。它們不語，卻教會我們生命的堅韌與平衡；它們不動，卻為我們的世界帶來流動的生機。何不今天就為自己的生活，增添一抹綠意呢？<br><br>🌿 蕨積 - 讓生活多一點綠
+    
+                    </div>
+                    <a href="2026-03-26-植物界的沉默魔術師：它們如何悄悄改變你的生活？.html" class="read-more">🔗 查看獨立頁面 →</a>
+                </div>
+                
+                <div class="section-title">📖 過往文章</div>
+                <ul class="past-list" id="past-list">
 
-                    <li class="article-item" data-category="未分類">
-                        <span class="category-badge" style="background: #6c757d;">未分類</span>
-                        <a class="article-link" href="2026-03-26-穿梭時空的綠精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠精靈：蕨類植物的奧秘與魅力</a>
-                        <div class="article-meta">📅 2026-03-26</div>
+                    <li class="past-item" data-category="未分類">
+                        <span class="past-badge" style="background: #6c757d;">未分類</span>
+                        <a class="past-link" href="2026-03-26-蕨類植物：地球上的綠色活化石，不開花也能征服世界.html">蕨類植物：地球上的綠色活化石，不開花也能征服世界</a>
+                        <div class="past-meta">📅 2026-03-26</div>
                     </li>
-                    <li class="article-item" data-category="植物">
-                        <span class="category-badge" style="background: #4a7c59;">植物</span>
-                        <a class="article-link" href="2026-03-26-**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**.html">**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**</a>
-                        <div class="article-meta">📅 2026-03-26</div>
+                    <li class="past-item" data-category="植物">
+                        <span class="past-badge" style="background: #4a7c59;">植物</span>
+                        <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**.html">**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**</a>
+                        <div class="past-meta">📅 2026-03-26</div>
                     </li>
-                    <li class="article-item" data-category="植物">
-                        <span class="category-badge" style="background: #4a7c59;">植物</span>
-                        <a class="article-link" href="2026-03-26-植物界的沉默魔術師：它們如何悄悄改變你的生活？.html">植物界的沉默魔術師：它們如何悄悄改變你的生活？</a>
-                        <div class="article-meta">📅 2026-03-26</div>
+                    <li class="past-item" data-category="未分類">
+                        <span class="past-badge" style="background: #6c757d;">未分類</span>
+                        <a class="past-link" href="2026-03-26-穿梭時空的綠精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠精靈：蕨類植物的奧秘與魅力</a>
+                        <div class="past-meta">📅 2026-03-26</div>
                     </li>
-                    <li class="article-item" data-category="未分類">
-                        <span class="category-badge" style="background: #6c757d;">未分類</span>
-                        <a class="article-link" href="2026-03-26-蕨類植物：地球上的綠色活化石，不開花也能征服世界.html">蕨類植物：地球上的綠色活化石，不開花也能征服世界</a>
-                        <div class="article-meta">📅 2026-03-26</div>
+                    <li class="past-item" data-category="未分類">
+                        <span class="past-badge" style="background: #6c757d;">未分類</span>
+                        <a class="past-link" href="2026-03-25-**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力**.html">**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力**</a>
+                        <div class="past-meta">📅 2026-03-25</div>
                     </li>
-                    <li class="article-item" data-category="未分類">
-                        <span class="category-badge" style="background: #6c757d;">未分類</span>
-                        <a class="article-link" href="2026-03-25-穿梭時空的綠色精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠色精靈：蕨類植物的奧秘與魅力</a>
-                        <div class="article-meta">📅 2026-03-25</div>
+                    <li class="past-item" data-category="未分類">
+                        <span class="past-badge" style="background: #6c757d;">未分類</span>
+                        <a class="past-link" href="2026-03-25-穿梭時空的綠色精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠色精靈：蕨類植物的奧秘與魅力</a>
+                        <div class="past-meta">📅 2026-03-25</div>
                     </li>
                 </ul>
             </div>
             
             <div class="sidebar">
-                <div class="section-title">📚 過往文章</div>
+                <div class="section-title">📚 歷史歸檔</div>
 
                 <div class="archive-month">
                     <div class="archive-month-title">2026年3月</div>
-                    <ul class="archive-list"><li><a href="2026-03-26-穿梭時空的綠精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠精靈：蕨類植物的奧秘與魅力</a></li><li><a href="2026-03-26-**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**.html">**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」...</a></li><li><a href="2026-03-26-植物界的沉默魔術師：它們如何悄悄改變你的生活？.html">植物界的沉默魔術師：它們如何悄悄改變你的生活？</a></li><li><a href="2026-03-26-蕨類植物：地球上的綠色活化石，不開花也能征服世界.html">蕨類植物：地球上的綠色活化石，不開花也能征服世界</a></li><li><a href="2026-03-25-穿梭時空的綠色精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠色精靈：蕨類植物的奧秘與魅力</a></li><li><a href="2026-03-25-**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力**.html">**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力**</a></li>
+                    <ul class="archive-list"><li><a href="2026-03-26-蕨類植物：地球上的綠色活化石，不開花也能征服世界.html">蕨類植物：地球上的綠色活化石，不開花也能征服世界</a></li><li><a href="2026-03-26-**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的「隱藏版」生存智慧**.html">**標題：不只會呼吸，還會思考？揭開植物令人驚嘆的...</a></li><li><a href="2026-03-26-穿梭時空的綠精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠精靈：蕨類植物的奧秘與魅力</a></li><li><a href="2026-03-25-**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力**.html">**穿越時空的綠精靈：蕨類植物的生存智慧與園藝魅力...</a></li><li><a href="2026-03-25-穿梭時空的綠色精靈：蕨類植物的奧秘與魅力.html">穿梭時空的綠色精靈：蕨類植物的奧秘與魅力</a></li>
                     </ul>
                 </div>
             </div>
@@ -211,8 +273,8 @@
     </div>
     
     <script>
-        function filterArticles(category) {
-            const items = document.querySelectorAll('#article-list .article-item');
+        function filterPastArticles(category) {
+            const items = document.querySelectorAll('#past-list .past-item');
             items.forEach(item => {
                 if (category === 'all' || item.dataset.category === category) {
                     item.style.display = '';
