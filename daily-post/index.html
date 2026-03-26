@@ -339,8 +339,8 @@
     <main class="content">
         <div class="daily-container">
             <div class="page-header">
-                <h1>🌿 蕨積每日文章</h1>
-                <p>植物・永續・碳盤查・生活 — 每天一篇，與你一起成長</p>
+                <h1> 蕨積每日文章 </h1>
+                <p>每天一篇，與您一起成長</p>
             </div>
             
             <div class="categories">
@@ -522,6 +522,7 @@
       fetch('/nav.html')
         .then(response => response.text())
         .then(data => {
+          // 修正導覽列中的連結，加上前綴 /
           let fixedData = data.replace(/href="(?!https?:\/\/|\/)([^"]+)"/g, 'href="/$1"');
           fixedData = fixedData.replace(/href="\/([^"]+)"/g, 'href="/$1"');
           document.getElementById('nav-placeholder').innerHTML = fixedData;
