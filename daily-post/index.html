@@ -256,7 +256,6 @@
         flex-wrap: wrap;
       }
     }
-    /* ===== 每日文章專用樣式 ===== */
     .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
     .page-header { text-align: center; margin-bottom: 2rem; }
     .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
@@ -282,10 +281,6 @@
     }
     .category-btn:hover { transform: translateY(-2px); }
     .category-btn.active { background: #4a7c59; color: white; }
-    .category-植物.active { background: #4a7c59; }
-    .category-永續.active { background: #2c7a4d; }
-    .category-碳盤查.active { background: #1e6f5c; }
-    .category-生活.active { background: #b88b4a; }
     
     .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
     .main-col { flex: 3; min-width: 250px; }
@@ -345,10 +340,10 @@
             
             <div class="categories">
                 <button class="category-btn active" data-category="all">📋 全部</button>
-                <button class="category-btn category-植物" data-category="植物">🌿 植物</button>
-                <button class="category-btn category-永續" data-category="永續">♻️ 永續</button>
-                <button class="category-btn category-碳盤查" data-category="碳盤查">📊 碳盤查</button>
-                <button class="category-btn category-生活" data-category="生活">🏡 生活</button>
+                <button class="category-btn" data-category="植物">🌿 植物</button>
+                <button class="category-btn" data-category="永續">♻️ 永續</button>
+                <button class="category-btn" data-category="碳盤查">📊 碳盤查</button>
+                <button class="category-btn" data-category="生活">🏡 生活</button>
             </div>
             
             <div class="two-columns">
@@ -363,9 +358,10 @@
                     
                     <div class="section-title">📖 過往文章</div>
                     <ul class="past-list" id="pastList">
-                        <li class="past-item" data-category="未分類">
-                            <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html"></a>
+                        
+                        <li class="past-item" data-category="永續">
+                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
+                            <a class="past-link" href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a>
                             <div class="past-meta">📅 2026-03-27</div>
                         </li>
                         <li class="past-item" data-category="未分類">
@@ -373,44 +369,34 @@
                             <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活圈.html"></a>
                             <div class="past-meta">📅 2026-03-27</div>
                         </li>
+                        <li class="past-item" data-category="未分類">
+                            <span class="past-badge" style="background: #6c757d;">未分類</span>
+                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html"></a>
+                            <div class="past-meta">📅 2026-03-27</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒師：五款室內植物，讓你的家成為身心充電站.html">綠意療癒師：五款室內植物，讓你的家成為身心充電站</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**.html">**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧.html">標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？.html">綠意療癒力：為什麼你的房間需要一盆植物？</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
                             <a class="past-link" href="2026-03-26-沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康.html">沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正默默為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正默默為你施展「植物療癒力」**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-沉默的室友：室內植物如何悄悄改變你的生活.html">沉默的室友：室內植物如何悄悄改變你的生活</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠色療癒師：植物如何悄悄改善你的身心靈健康.html">綠色療癒師：植物如何悄悄改善你的身心靈健康</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼家裡該有一盆植物？.html">綠意療癒力：為什麼家裡該有一盆植物？</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**.html">**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="植物">
@@ -420,17 +406,52 @@
                         </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：光合作用如何改變世界？.html">植物界的沉默魔術師：光合作用如何改變世界？</a>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**.html">**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正默默為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正默默為你施展「植物療癒力」**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-植物界的隱形守護者：你不知道的居家空氣淨化大師.html">植物界的隱形守護者：你不知道的居家空氣淨化大師</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：那些你不知道的生存智慧.html">植物界的沉默魔術師：那些你不知道的生存智慧</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
                             <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是位沉默的空氣淨化師與心靈療癒師**.html"></a>
+                            <a class="past-link" href="2026-03-26-植物界的隱形殺手：食蟲植物的生存智慧.html"></a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
                             <span class="past-badge" style="background: #6c757d;">未分類</span>
                             <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會社交揭開植物不為人知的「綠色智慧」**.html"></a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item" data-category="植物">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠色療癒師：植物如何悄悄改善你的身心靈健康.html">綠色療癒師：植物如何悄悄改善你的身心靈健康</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="植物">
@@ -445,27 +466,12 @@
                         </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：那些你不知道的生存智慧.html">植物界的沉默魔術師：那些你不知道的生存智慧</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**.html">**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**</a>
+                            <a class="past-link" href="2026-03-26-標題：別再當「植物殺手」五個室內養護秘訣，讓你的綠意生生不息.html">標題：別再當「植物殺手」！五個室內養護秘訣，讓你的綠意生生不息</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
                             <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：它們如何悄悄改變你的生活？.html"></a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="植物">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**.html">**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**</a>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是位沉默的空氣淨化師與心靈療癒師**.html"></a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
@@ -475,17 +481,12 @@
                         </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師**</a>
+                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼家裡該有一盆植物？.html">綠意療癒力：為什麼家裡該有一盆植物？</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
                             <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-26-蕨類植物：地球上的綠色活化石，不開花也能征服世界.html"></a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="未分類">
-                            <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-26-植物界的隱形殺手：食蟲植物的生存智慧.html"></a>
+                            <a class="past-link" href="2026-03-26-穿梭時空的綠精靈：蕨類植物的奧秘與魅力.html"></a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="未分類">
@@ -495,7 +496,7 @@
                         </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒師：五款室內植物，讓你的家成為身心充電站.html">綠意療癒師：五款室內植物，讓你的家成為身心充電站</a>
+                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**.html">**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item" data-category="植物">
@@ -505,12 +506,7 @@
                         </li>
                         <li class="past-item" data-category="植物">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的隱形守護者：你不知道的居家空氣淨化大師.html">植物界的隱形守護者：你不知道的居家空氣淨化大師</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item" data-category="未分類">
-                            <span class="past-badge" style="background: #6c757d;">未分類</span>
-                            <a class="past-link" href="2026-03-26-植物界的靜默魔法師：它們如何悄悄療癒你的身心？.html"></a>
+                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                     </ul>
@@ -518,9 +514,10 @@
                 
                 <div class="sidebar-col">
                     <div class="section-title">📚 歷史歸檔</div>
+                    
                     <div class="archive-month">
                         <div class="archive-month-title">2026年3月</div>
-                        <ul class="archive-list"><li><a href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html"></a></li><li><a href="2026-03-27-從日常小事做起，打造你的永續生活圈.html"></a></li><li><a href="2026-03-26-沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康.html">沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身...</a></li><li><a href="2026-03-26-**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的風景：室內植物的療癒...</a></li><li><a href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正默默為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正默默為你...</a></li><li><a href="2026-03-26-沉默的室友：室內植物如何悄悄改變你的生活.html">沉默的室友：室內植物如何悄悄改變你的生活</a></li><li><a href="2026-03-26-綠色療癒師：植物如何悄悄改善你的身心靈健康.html">綠色療癒師：植物如何悄悄改善你的身心靈健康</a></li><li><a href="2026-03-26-綠意療癒力：為什麼家裡該有一盆植物？.html">綠意療癒力：為什麼家裡該有一盆植物？</a></li><li><a href="#" style="color:#aaa;">... 共36篇</a></li>
+                        <ul class="archive-list"><li><a href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a></li><li><a href="2026-03-27-從日常小事做起，打造你的永續生活圈.html"></a></li><li><a href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html"></a></li><li><a href="2026-03-26-綠意療癒師：五款室內植物，讓你的家成為身心充電站.html">綠意療癒師：五款室內植物，讓你的家成為身心充電站</a></li><li><a href="2026-03-26-**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**.html">**標題：不只會呼吸，還會「說話」？揭開室內植物的...</a></li><li><a href="2026-03-26-標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧.html">標題：植物不說話，卻教會我們的事：從一片葉子看見生...</a></li><li><a href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？.html">綠意療癒力：為什麼你的房間需要一盆植物？</a></li><li><a href="2026-03-26-沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康.html">沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身...</a></li><li><a href="#" style="color:#aaa;">... 共37篇</a></li>
                         </ul>
                     </div>
                 </div>
@@ -539,6 +536,8 @@
   </footer>
     
     <script>
+        // 導覽列載入（外掛方式）
+        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -596,25 +595,37 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-    // 分類篩選功能
-    const filterBtns = document.querySelectorAll('.category-btn');
-    const pastItems = document.querySelectorAll('#pastList .past-item');
-    
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const category = btn.dataset.category;
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+        
+        // 分類篩選功能
+        (function() {
+            var filterBtns = document.querySelectorAll('.category-btn');
+            var pastItems = document.querySelectorAll('#pastList .past-item');
             
-            pastItems.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = '';
-                } else {
-                    item.style.display = 'none';
+            function filterArticles() {
+                var activeBtn = document.querySelector('.category-btn.active');
+                var category = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+                for (var i = 0; i < pastItems.length; i++) {
+                    var item = pastItems[i];
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
                 }
-            });
-        });
-    });
+            }
+            
+            for (var i = 0; i < filterBtns.length; i++) {
+                filterBtns[i].addEventListener('click', function() {
+                    for (var j = 0; j < filterBtns.length; j++) {
+                        filterBtns[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    filterArticles();
+                });
+            }
+            
+            filterArticles();
+        })();
     </script>
 </body>
 </html>
