@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學 - 蕨積每日文章</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>/* ===== 共用樣式 ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --ink: #1a1a14;
+      --moss: #3d5a38;
+      --fern: #5a7a4a;
+      --sage: #8aab7a;
+      --mist: #d4e4c8;
+      --cream: #f5f0e8;
+      --stone: #9a9080;
+      --paper: #faf7f2;
+    }
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 4vw; height: 72px;
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(90,122,74,0.12);
+    }
+    nav.scrolled { box-shadow: 0 2px 24px rgba(61,90,56,0.10); }
+
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .logo-mark { width: 38px; height: 38px; flex-shrink: 0; }
+    .logo-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .logo-text {
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      color: var(--moss);
+      letter-spacing: 0.05em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .logo-text span {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: var(--stone);
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .nav-links li { position: relative; padding: 0 2px; }
+    .nav-links a {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      text-decoration: none;
+      padding-bottom: 3px;
+      opacity: 0.75;
+      display: inline-block;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--fern); }
+    .nav-contact {
+      padding: 8px 20px !important;
+      border: 1px solid var(--fern) !important;
+      border-radius: 2px;
+      color: var(--fern) !important;
+      opacity: 1 !important;
+      margin-left: 0.5rem;
+    }
+    .nav-contact:hover { background: var(--fern); color: white !important; }
+
+    .nav-links li .dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 18px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(250,247,242,0.98);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(90,122,74,0.14);
+      border-top: 2px solid var(--fern);
+      box-shadow: 0 12px 40px rgba(61,90,56,0.12);
+      min-width: 148px;
+      list-style: none;
+      padding: 8px 0;
+      z-index: 300;
+    }
+    .nav-links li:hover .dropdown { display: block; }
+    .nav-links li .dropdown::before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid var(--fern);
+    }
+    .dropdown li a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      opacity: 0.7;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .dropdown li a:hover {
+      opacity: 1;
+      color: var(--fern);
+      padding-left: 26px;
+      background: rgba(90,122,74,0.04);
+    }
+    .dropdown li + li { border-top: 1px solid rgba(90,122,74,0.08); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      width: 40px; height: 40px;
+      cursor: pointer;
+      background: none; border: none;
+      flex-shrink: 0;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--moss);
+      transition: transform 0.2s ease;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+      background: #faf7f2;
+      border-bottom: 1px solid rgba(90,122,74,0.15);
+      padding: 0 6vw 40px;
+      z-index: 99;
+      overflow-y: auto;
+      transform: translateX(100%);
+      visibility: hidden;
+      transition: transform 0.3s ease;
+    }
+    .mobile-menu.open { transform: translateX(0); visibility: visible; }
+    .mobile-menu ul { list-style: none; }
+    .mobile-menu > ul > li > a,
+    .mobile-parent {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 0;
+      font-family: 'Noto Serif TC', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      color: var(--moss);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(90,122,74,0.1);
+      cursor: pointer;
+    }
+    .mobile-parent:hover { color: var(--fern); }
+    .mobile-caret { display: inline-block; transition: transform 0.2s; }
+    .mobile-caret.open { transform: rotate(180deg); }
+    .mobile-sub {
+      list-style: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .mobile-sub.open { max-height: 200px; }
+    .mobile-sub li a {
+      display: block;
+      padding: 11px 0 11px 16px;
+      font-size: 0.85rem;
+      color: var(--stone);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(90,122,74,0.06);
+      letter-spacing: 0.06em;
+    }
+    .mobile-sub li a:hover { color: var(--fern); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    .content {
+      flex: 1;
+      padding-top: 92px;
+      padding-bottom: 40px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(90,122,74,0.15);
+      padding: 40px 4vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--paper);
+      margin-top: auto;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .footer-links a {
+      font-size: 0.75rem;
+      color: var(--stone);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+    }
+    .footer-links a:hover {
+      opacity: 1;
+      color: var(--fern);
+    }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--stone);
+      letter-spacing: 0.1em;
+    }
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+      .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .article-category {
+        display: inline-block;
+        background: #b88b4a;
+        color: white;
+        padding: 0.2rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
+    @media (max-width: 768px) {
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
+    }
+    </style>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <main class="content">
+        <div class="article-container">
+            <div class="article-category">📌 生活</div>
+            <h1 class="article-title">你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學</h1>
+            <div class="article-date">📅 2026年04月10日</div>
+            <div class="article-content">標題：你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學<br><br>故事引入：<br><br>安娜的早晨總是從一陣焦慮開始。鬧鐘響起，她衝進廚房，在堆滿雜物的流理台上尋找她的咖啡濾杯。視線掃過五個不同款式的馬克杯（兩個是贈品，一個是衝動購買，一個有裂痕捨不得丟，一個是「總有一天會用」的收藏品），最後在洗碗機裡找到她最常用的那個。沖好咖啡，她端著杯子，卻找不到一處可以安靜坐下的角落。沙發上堆著待摺的衣服，茶几上是未拆的網購包裹。她嘆了口氣，站在窗邊匆忙喝完咖啡，開始了又一個被物品追趕的日子。<br><br>直到那個週末，她讀到一段關於日本「茶道」的敘述，其中「一期一會」的精神讓她愣住——以一生僅此一次的鄭重之心，對待眼前這一碗茶。她看著自己櫥櫃裡那排馬克杯，突然困惑了：擁有這麼多選擇，為何她的早晨儀式感，反而比不上一只簡單茶碗帶來的專注與平靜？<br><br>問答開始：<br><br>Q：什麼是「簡單生活哲學」？它只是把東西丟掉嗎？<br><br>A：這是最常見的誤解。簡單生活（Simplicity Living）的核心並非匱乏，而是「刻意地提升對我們最重要的事物，並去除讓我們分心的事物」。它是一套「減法」的思考模式，關乎空間、時間、精力與心靈。丟棄物品只是表象，內在是對自我需求的深度審視：我擁有的，是否真正服務於我的生活？還是反過來，我在服務我所擁有的？<br><br>Q：為什麼「少」反而會帶來「多」的幸福？大腦科學怎麼說？<br><br>A：我們的注意力是有限的認知資源。心理學家稱之為「決策疲勞」。當你的環境充滿雜物、行程塞滿瑣事，大腦必須不斷處理大量無關緊要的視覺資訊與選擇（例如：今天用哪個杯子？那件衣服要不要留？），這會持續消耗你的心智能量，導致焦慮、拖延與無法專注。<br><br>當你實踐「少即是多」，你是在為大腦創造「認知上的喘息空間」。清晰的桌面、精簡的衣櫥、簡化的行程，都等於在告訴大腦：「這裡是安全的，你可以放鬆、專注於當下。」這時，你反而「獲得」了更多寶貴的東西：時間、清晰的思緒、內心的寧靜，以及對已有之物的深刻欣賞與幸福感。<br><br>Q：我該從哪裡開始實踐？感覺工程浩大。<br><br>A：忘掉「斷捨離大掃除」的壓力。請從一個「五分鐘儀式」開始：<br><br>1.  一個小區域：只鎖定一個抽屜、一個書架、或一個軟體資料夾。<br>2.  一個簡單提問：拿起每一件物品，問自己：「它在過去90天內，是否為我的生活增添了真實的價值或快樂？」價值可以是實用，快樂可以是美感。<br>3.  立即行動：對於明確的「否」，感謝它曾經的服務，然後立即決定它的去向（丟棄、捐贈、回收）。不要創造「待處理」堆。<br><br>這個練習的重點不在於丟了多少東西，而在於訓練你的選擇肌肉。你會開始分辨「需要」、「想要」與「社會告訴你該要」之間的差異。<br><br>Q：簡單生活會不會讓生活變得無聊？<br><br>A：恰恰相反。當你移除了多餘的噪音，你才能真正「聽見」自己喜歡的旋律。擁有三件真心喜愛、穿著合宜的白襯衫，遠比擁有一櫃「還不錯」卻讓你每天選擇困難的衣服，帶來更多的自信與愉悅。簡單生活是為你的真實興趣與熱情騰出空間。當桌面清空，你才可能看見那本一直想讀的書；當週末行程清空，你才可能發現與家人散步的樂趣。它剔除的是干擾，留下的正是生活本身豐盈的質地。<br><br>安娜從那排馬克杯開始。她只留下最喜歡的那一只，其餘感謝後送走。現在，每個早晨，她都用這只杯子專心喝咖啡，感受它的溫度與手感。她發現，擁有的更少，但享受的更多。她的家開始呼吸，她的心也是。<br><br>幸福，往往不是拼命添加，而是溫柔地刪去。從一個角落、一件物品、一個決定開始，練習把生活還給自己。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+            <div class="article-footer">🌿 蕨積 - 讓生活多一點綠<br>每日一篇，與你一起成長</div>
+            <a href="index.html" class="back-link">← 返回文章列表</a>
+        </div>
+    </main>
+    <footer>
+    <ul class="footer-links">
+      <li><a href="/shop.html">植物選品</a></li>
+      <li><a href="/consult.html">綠色顧問</a></li>
+      <li><a href="/fbnote.html">蕨望筆記</a></li>
+      <li><a href="/about.html">關於蕨積</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
+  </footer>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('/nav.html')
+    .then(response => response.text())
+    .then(data => {
+      let fixedData = data.replace(/href="(?!https?:\/\/|\/)([^"]+)"/g, 'href="/$1"');
+      fixedData = fixedData.replace(/href="\/([^"]+)"/g, 'href="/$1"');
+      document.getElementById('nav-placeholder').innerHTML = fixedData;
+      initNav();
+    })
+    .catch(err => {
+      console.error('無法載入導覽列:', err);
+      document.getElementById('nav-placeholder').innerHTML = 
+        '<nav style="background:var(--moss);color:white;padding:0 4vw;height:72px;display:flex;align-items:center;">' +
+        '<span style="font-family:Noto Serif TC,serif;font-weight:900;">🌿 蕨積</span>' +
+        '</nav>';
+    });
+
+  function initNav() {
+    var btn = document.getElementById('hamburger');
+    var menu = document.getElementById('mobileMenu');
+    if (btn && menu) {
+      btn.addEventListener('click', function () {
+        btn.classList.toggle('open');
+        menu.classList.toggle('open');
+      });
+      menu.querySelectorAll('.mobile-link').forEach(function (a) {
+        a.addEventListener('click', function () {
+          btn.classList.remove('open');
+          menu.classList.remove('open');
+        });
+      });
+    }
+    if (menu) {
+      menu.querySelectorAll('.mobile-parent').forEach(function (parent) {
+        parent.addEventListener('click', function () {
+          var id = parent.getAttribute('data-target');
+          var sub = document.getElementById(id);
+          var caretId = 'caret-' + id.replace('sub-', '');
+          var caret = document.getElementById(caretId);
+          var opening = !sub.classList.contains('open');
+          menu.querySelectorAll('.mobile-sub').forEach(function (s) { s.classList.remove('open'); });
+          menu.querySelectorAll('.mobile-caret').forEach(function (c) { c.classList.remove('open'); });
+          if (opening) {
+            sub.classList.add('open');
+            if (caret) caret.classList.add('open');
+          }
+        });
+      });
+    }
+    window.addEventListener('scroll', function () {
+      var nav = document.getElementById('mainNav');
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
+});
+</script>
+</body>
+</html>
