@@ -261,30 +261,8 @@
     .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
     .page-header p { color: var(--stone); margin-top: 0.5rem; }
     
-    .categories {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-    }
-    .category-btn {
-        padding: 0.5rem 1.5rem;
-        border-radius: 30px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: transform 0.2s;
-        background: #e8e0d8;
-        color: #4a5b4e;
-    }
-    .category-btn:hover { transform: translateY(-2px); }
-    .category-btn.active { background: #4a7c59; color: white; }
-    
     .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
     .main-col { flex: 3; min-width: 250px; }
-    .sidebar-col { flex: 1; min-width: 200px; background: white; border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: fit-content; }
     
     .latest-article {
         background: white;
@@ -331,20 +309,15 @@
                 <p>蕨積每日文章 - 植物分類精選</p>
             </div>
             
-            <div class="categories">
-                <button class="category-btn" data-category="all" onclick="location.href='index.html';">📋 全部</button>
-                <button class="category-btn active" data-category="植物">🌿 植物</button>
-            </div>
-            
             <div class="two-columns">
                 <div class="main-col">
                     
                     <div class="latest-article">
                         <div class="latest-category" style="background: #4a7c59;">📌 植物</div>
-                        <h1 class="latest-title">辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力</h1>
+                        <h1 class="latest-title">垂直綠洲 vs. 傳統盆栽：你的第一面植生牆入門對決指南</h1>
                         <div class="latest-date">📅 2026-04-15</div>
-                        <div class="latest-content">標題：辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力<br><br>還記得那個午後嗎？陽光斜斜灑進辦公室，你盯著電腦螢幕，眼皮卻越來越重。會議報告上的字開始跳舞，思緒像斷了線的風箏，怎麼也抓不回來。這時，你瞥見隔壁同事桌上那盆生氣勃勃的綠蘿，葉片油亮，藤蔓輕垂，彷彿一個安靜的深呼吸。你不自覺地也跟著深吸了一口氣，感覺緊繃的神經鬆開了一些。<br><br>這不是錯覺。科學研究早已證實，在辦公環境中引入植物，能有效降低壓力、提升專注力達15%，甚至能增加創造力。它們不只是裝飾，更是默默支援我們生產力的最佳隊友。以下推薦五款特別適合辦公室環境的「綠色職場夥伴」，它們好照顧、效益高，能從不同角度為你的工作效率加分：<br><br>1. 虎尾蘭：你的「空氣淨化靜音牆」<br>*   核心技能：被NASA認證的頂級空氣清道夫，尤其在夜間仍能吸收二氧化碳、釋放氧氣，並有效去除甲醛、苯等辦公室常見揮發物。<br>*   辦公優勢：極度耐旱、耐低光，幾乎是「養不死的代表」。適合放在角落、檔案櫃上方或隔板旁，不佔桌面空間。它能像一道隱形的淨化屏障，默默改善你呼吸的空氣品質，讓大腦獲得更多氧氣，思路更清晰。<br>*   照顧心法：兩到三週澆一次水即可，寧乾勿濕。忘記它的存在，就是對它最好的照顧。<br><br>2. 常春藤：你的「數位視覺按摩師」<br>*   核心技能：研究顯示，它能有效吸附空氣中的懸浮微粒與黴菌孢子。更重要的是，其蔓生、柔軟的線條能緩解因長時間凝視螢幕直線與方框造成的「視覺疲勞」。<br>*   辦公優勢：可以放在書架高處或使用吊盆懸掛，讓枝葉自然垂落，形成柔和的綠色線條。當眼睛酸澀時，追隨其蜿蜒的藤蔓，是一種自然的眼球運動與放鬆。<br>*   照顧心法：喜歡明亮散射光，介質表面乾了再澆水。定期噴噴水霧，它能長得更精神。<br><br>3. 白鶴芋：你的「濕度調節小幫手」<br>*   核心技能：擁有強大的蒸散作用，能自然調節周圍空氣濕度，對抗空調環境的乾燥。同時也能過濾酒精、丙酮等溶劑揮發氣體。<br>*   辦公優勢：開著優雅的白色佛焰苞，被譽為「和平之花」，能帶來平靜感。放在辦公桌旁，能緩解因乾燥引起的眼睛乾澀、皮膚緊繃，讓身體處在更舒適的狀態，專注力更持久。<br>*   照顧心法：需保持盆土微濕（但勿積水），喜歡溫暖及較高的濕度。看到葉片微微下垂就是該澆水的訊號。<br><br>4. 仙人掌與多肉植物：你的「無聲減壓小夥伴」<br>*   核心技能：造型可愛，照顧簡單。心理學研究指出，照料生命（即使是植物）能帶來成就感與責任感，有助於轉移工作焦慮。<br>*   辦公優勢：體積小，不干擾桌面作業。當工作卡關、心情煩躁時，看看它們圓潤厚實的模樣，有種莫名的療癒感。為它們澆水、觀察生長，是一個簡短而有效的正念練習，幫助大腦重啟。<br>*   照顧心法：需要充足陽光（窗邊最佳），澆水遵循「乾透澆透」原則，千萬別過度關愛。<br><br>5. 波士頓腎蕨：你的「綠色加濕瀑布」<br>*   核心技能：蒸散作用效率極高，是天然的迷你加濕器。其豐茂、羽狀開展的葉叢能帶來強烈的生機感。<br>*   辦公優勢：茂盛的姿態能創造一個被植物環繞的「微環境」，增加隱私感與心理安全感。尤其適合需要高度創意或經常腦力激盪的工作者，其蓬勃的生命力有助於激發靈感。<br>*   照顧心法：喜歡間接光與高濕度，介質需保持濕潤（非潮濕），勤噴水霧會讓它葉色翠綠、充滿活力。<br><br>選擇一盆與你辦公環境光線、濕度相匹配的植物，就是找到了一位最安靜、最可靠的職場盟友。它不會給你壓力，只會在你需要時，提供一口新鮮空氣、一片養眼的綠意，以及一個重新專注的契機。現在，就為你的辦公桌，招攬一位綠色夥伴吧。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
-                        <a href="2026-04-15-辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力.html" class="read-more">🔗 查看獨立頁面 →</a>
+                        <div class="latest-content">垂直綠洲 vs. 傳統盆栽：你的第一面植生牆入門對決指南想為生活增添綠意，卻受困於有限的平面空間？「植生牆」或稱「垂直花園」正掀起一場綠色革命。它不僅是美學裝飾，更是都市中的微型生態系統。本文將透過對比分析，帶你從零開始，理解如何打造一面適合自己的垂直花園，看看它與傳統盆栽究竟有何不同。1. 核心理念之爭：平面延伸 vs. 立面拓展*   傳統盆栽思維：在水平面上爭奪空間。陽台、窗台、地板是主要戰場，綠化量取決於「坪數」。*   植生牆思維：向垂直的「牆面」要空間。將綠化視為「立面面積」的利用，特別適合狹小都市住宅。它解放了寶貴的地面空間，讓綠意成為建築的一部分。2. 系統選擇對比：模組化 v...</div>
+                        <a href="2026-04-15-垂直綠洲-vs.-傳統盆栽：你的第一面植生牆入門對決指南.html" class="read-more">🔗 閱讀全文 →</a>
                     </div>
                     
                     <div class="section-title">📖 過往文章</div>
@@ -352,22 +325,7 @@
                         
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-04-15-辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力.html">辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力</a>
-                            <div class="past-meta">📅 2026-04-15</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-04-15-我的城市綠洲探險日記：原來你們一直都在.html">我的城市綠洲探險日記：原來你們一直都在</a>
-                            <div class="past-meta">📅 2026-04-15</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
                             <a class="past-link" href="2026-04-15-垂直綠洲-vs.-傳統盆栽：你的第一面植生牆入門對決指南.html">垂直綠洲 vs. 傳統盆栽：你的第一面植生牆入門對決指南</a>
-                            <div class="past-meta">📅 2026-04-15</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-04-15-你家植生牆在求救？三大養護地雷破解法，讓綠牆重回顏值巔峰.html">你家植生牆在求救？三大養護地雷破解法，讓綠牆重回顏值巔峰！</a>
                             <div class="past-meta">📅 2026-04-15</div>
                         </li>
                         <li class="past-item">
@@ -377,107 +335,32 @@
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-04-15-我的城市綠洲探險日記：原來你們一直都在.html">我的城市綠洲探險日記：原來你們一直都在</a>
+                            <div class="past-meta">📅 2026-04-15</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
                             <a class="past-link" href="2026-04-15-綠意鍵盤手：三盆讓辦公室「氧」樂多的工作夥伴.html">綠意鍵盤手：三盆讓辦公室「氧」樂多的工作夥伴</a>
                             <div class="past-meta">📅 2026-04-15</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
+                            <a class="past-link" href="2026-04-15-辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力.html">辦公桌綠洲：五款低調卻強大的植物夥伴，拯救你的專注力與創造力</a>
+                            <div class="past-meta">📅 2026-04-15</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠色療癒師：植物如何悄悄改善你的身心靈健康.html">綠色療癒師：植物如何悄悄改善你的身心靈健康</a>
-                            <div class="past-meta">📅 2026-03-26</div>
+                            <a class="past-link" href="2026-04-15-垂直綠洲的關鍵戰役：植生牆結構與水管理終極比拚.html">垂直綠洲的關鍵戰役：植生牆結構與水管理終極比拚</a>
+                            <div class="past-meta">📅 2026-04-15</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的隱形守護者：你不知道的居家空氣淨化大師.html">植物界的隱形守護者：你不知道的居家空氣淨化大師</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？.html">綠意療癒力：為什麼你的房間需要一盆植物？</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？🌱.html">綠意療癒力：為什麼你的房間需要一盆植物？🌱</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**.html">**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：光合作用如何改變世界？.html">植物界的沉默魔術師：光合作用如何改變世界？</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正悄悄為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正悄悄為你施展「植物療癒力」**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：那些你不知道的生存智慧.html">植物界的沉默魔術師：那些你不知道的生存智慧</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**.html">**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼家裡該有一盆植物？.html">綠意療癒力：為什麼家裡該有一盆植物？</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧.html">標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正默默為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正默默為你施展「植物療癒力」**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
+                            <a class="past-link" href="2026-04-15-你家植生牆在求救？三大養護地雷破解法，讓綠牆重回顏值巔峰.html">你家植生牆在求救？三大養護地雷破解法，讓綠牆重回顏值巔峰！</a>
+                            <div class="past-meta">📅 2026-04-15</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
                             <a class="past-link" href="2026-03-26-**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**.html">**標題：沉默的室友，療癒的夥伴：你桌上的那盆綠植，遠比你想的更有趣**</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-沉默的室友：室內植物如何悄悄改變你的生活.html">沉默的室友：室內植物如何悄悄改變你的生活</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠意療癒師：五款室內植物，讓你的家成為身心充電站.html">綠意療癒師：五款室內植物，讓你的家成為身心充電站</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-綠色療癒力：一盆植物的身心靈奇蹟.html">綠色療癒力：一盆植物的身心靈奇蹟</a>
-                            <div class="past-meta">📅 2026-03-26</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #4a7c59;">植物</span>
-                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
                         <li class="past-item">
@@ -492,15 +375,105 @@
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？.html">綠意療癒力：為什麼你的房間需要一盆植物？</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-植物界的隱形守護者：你不知道的居家空氣淨化大師.html">植物界的隱形守護者：你不知道的居家空氣淨化大師</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正悄悄為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正悄悄為你施展「植物療癒力」**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒師：五款室內植物，讓你的家成為身心充電站.html">綠意療癒師：五款室內植物，讓你的家成為身心充電站</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的風景：室內植物的療癒魔法**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**.html">**標題：不只會呼吸，還會「說話」？揭開室內植物的療癒魔法與養護密技**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你家裡的綠色室友，正默默為你施展「植物療癒力」**.html">**標題：不只是裝飾！你家裡的綠色室友，正默默為你施展「植物療癒力」**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼你的房間需要一盆植物？🌱.html">綠意療癒力：為什麼你的房間需要一盆植物？🌱</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠色療癒師：植物如何悄悄改善你的身心靈健康.html">綠色療癒師：植物如何悄悄改善你的身心靈健康</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：那些你不知道的生存智慧.html">植物界的沉默魔術師：那些你不知道的生存智慧</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-植物界的沉默魔術師：光合作用如何改變世界？.html">植物界的沉默魔術師：光合作用如何改變世界？</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠意療癒力：為什麼家裡該有一盆植物？.html">綠意療癒力：為什麼家裡該有一盆植物？</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-沉默的室友：室內植物如何悄悄改變你的生活.html">沉默的室友：室內植物如何悄悄改變你的生活</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-綠色療癒力：一盆植物的身心靈奇蹟.html">綠色療癒力：一盆植物的身心靈奇蹟</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**.html">**標題：不只會呼吸，還會說話？揭開室內植物的「療癒超能力」**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧.html">標題：植物不說話，卻教會我們的事：從一片葉子看見生命的韌性與智慧</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**.html">**標題：沉默的室友，會呼吸的藝術品：室內植物的療癒魔法**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
                             <a class="past-link" href="2026-03-26-沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康.html">沉默的室友，療癒的夥伴：室內植物如何悄悄改善你的身心靈健康</a>
                             <div class="past-meta">📅 2026-03-26</div>
                         </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #4a7c59;">植物</span>
+                            <a class="past-link" href="2026-03-26-**標題：不只是裝飾你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**.html">**標題：不只是裝飾！你的室內植物，其實是沉默的空氣淨化師與心靈療癒師**</a>
+                            <div class="past-meta">📅 2026-03-26</div>
+                        </li>
                     </ul>
-                </div>
-                
-                <div class="sidebar-col">
-                    <div class="section-title">📚 歷史歸檔</div>
-                    <p style="color: var(--stone); font-size: 0.85rem;">此分類共 29 篇文章</p>
                 </div>
             </div>
         </div>

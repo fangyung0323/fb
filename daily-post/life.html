@@ -261,30 +261,8 @@
     .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
     .page-header p { color: var(--stone); margin-top: 0.5rem; }
     
-    .categories {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-    }
-    .category-btn {
-        padding: 0.5rem 1.5rem;
-        border-radius: 30px;
-        border: none;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: transform 0.2s;
-        background: #e8e0d8;
-        color: #4a5b4e;
-    }
-    .category-btn:hover { transform: translateY(-2px); }
-    .category-btn.active { background: #4a7c59; color: white; }
-    
     .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
     .main-col { flex: 3; min-width: 250px; }
-    .sidebar-col { flex: 1; min-width: 200px; background: white; border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: fit-content; }
     
     .latest-article {
         background: white;
@@ -331,20 +309,15 @@
                 <p>蕨積每日文章 - 生活分類精選</p>
             </div>
             
-            <div class="categories">
-                <button class="category-btn" data-category="all" onclick="location.href='index.html';">📋 全部</button>
-                <button class="category-btn active" data-category="生活">🏡 生活</button>
-            </div>
-            
             <div class="two-columns">
                 <div class="main-col">
                     
                     <div class="latest-article">
                         <div class="latest-category" style="background: #b88b4a;">📌 生活</div>
-                        <h1 class="latest-title">科學實證的儀式感：三個讓大腦愛上日常生活的微行動</h1>
+                        <h1 class="latest-title">你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學</h1>
                         <div class="latest-date">📅 2026-04-10</div>
-                        <div class="latest-content">### 科學實證的儀式感：三個讓大腦愛上日常生活的微行動<br><br>你是否覺得日子重複而乏味？神經科學研究指出，大腦對於新鮮和有意義的刺激會產生更強烈的神經迴路連結，並釋放多巴胺，帶來愉悅與動力。所謂的「儀式感」，並非昂貴的消費，而是透過有意識地設計日常行為，為大腦創造「值得銘記」的認知標記。以下提案均以心理學與行為科學研究為基礎，幫助你有效提升生活滿意度。<br><br>#### 1. 晨間「啟動儀式」：90秒決定一天基調<br>研究顯示，早晨的例行公事能顯著降低焦慮感，提供掌控感。與其匆忙滑手機，建議建立一個簡短、固定的感官啟動序列：<br>*   **生理錨定（30秒）**：醒後，喝一口溫水，並專注感受水流過喉嚨的感覺。這簡單的動作能溫和喚醒內臟，並將注意力拉回身體。<br>*   **意圖設定（30秒）**：面對窗戶或光源，在心中或筆記本上清晰說出一句今日核心意圖，例如：「今天，我將保持從容。」這能激活前額葉皮層，引導後續的決策與行為。<br>*   **感官啟動（30秒）**：選擇一種固定氣味（如檸檬精油、咖啡香）或一段純音樂（60-80 BPM為佳），專注感受15-30秒。這能創造一個獨特的心理「啟動線索」，幫助大腦切換到準備狀態。<br><br>#### 2. 創造「每週亮點」：預期效應提升整體幸福感<br>行為經濟學家發現，人們從「期待快樂事件」中獲得的幸福感，有時甚至超過事件本身。與其等待週末，主動在週間創造一個可預期的小亮點：<br>*   **固定「美味探索夜」**：每週選一個晚上，嘗試一道從未做過的新食譜，或訂購一家從未吃過的小店。味覺的新鮮體驗能強烈刺激大腦。<br>*   **設立「離線創作時光」**：每週撥出90分鐘，完全遠離數位裝置，進行一項具體的實體創作，如拼圖、手沖咖啡、照料植物、寫一封信。這能誘發「心流」狀態，深度恢復精力。<br>*   **數據支持**：一項發表於《正向心理學期刊》的研究指出，每週規劃並期待一件令人愉悅的小事，能讓未來一週的情緒基準線提升達12%。<br><br>#### 3. 建立「日終微覆盤」：強化記憶與感恩神經路徑<br>睡眠是大腦整理記憶的關鍵時間。睡前進行一個輕量的回顧儀式，能幫助大腦強化正面記憶，促進情緒修復。<br>*   **「三件小事」記錄法**：不用長篇日記，僅記錄下今日：<br>    1.  一件完成的事（無論多小，提升成就感）。<br>    2.  一個學到的新知或新感受（促進成長心態）。<br>    3.  一個值得感謝的瞬間（人或物皆可，激活感恩相關腦區）。<br>*   **環境轉換儀式**：設定一個固定的動作作為「一天結束」的信號，例如：為手機充電、點燃一支安神的蠟燭、進行五分鐘的輕緩伸展。這個動作會成為大腦的「界線信號」，幫助身心順利過渡到休息模式。<br><br>生活儀式感的本質，是**將自動駕駛模式，轉為有意識的參與**。透過這些有科學依據的微行動，我們不僅在安排行為，更是在訓練大腦更敏銳地捕捉美好、建構意義。從今晚的一個小儀式開始，你會發現，平凡的日子，原來充滿了值得標記的綠意。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
-                        <a href="2026-04-10-科學實證的儀式感：三個讓大腦愛上日常生活的微行動.html" class="read-more">🔗 查看獨立頁面 →</a>
+                        <div class="latest-content">標題：你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學故事引入：安娜的早晨總是從一陣焦慮開始。鬧鐘響起，她衝進廚房，在堆滿雜物的流理台上尋找她的咖啡濾杯。視線掃過五個不同款式的馬克杯（兩個是贈品，一個是衝動購買，一個有裂痕捨不得丟，一個是「總有一天會用」的收藏品），最後在洗碗機裡找到她最常用的那個。沖好咖啡，她端著杯子，卻找不到一處可以安靜坐下的角落。沙發上堆著待摺的衣服，茶几上是未拆的網購包裹。她嘆了口氣，站在窗邊匆忙喝完咖啡，開始了又一個被物品追趕的日子。直到那個週末，她讀到一段關於日本「茶道」的敘述，其中「一期一會」的精神讓她愣住——以一生僅此一次的鄭重之心，對待眼前這一碗茶...</div>
+                        <a href="2026-04-10-你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學.html" class="read-more">🔗 閱讀全文 →</a>
                     </div>
                     
                     <div class="section-title">📖 過往文章</div>
@@ -352,32 +325,12 @@
                         
                         <li class="past-item">
                             <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-科學實證的儀式感：三個讓大腦愛上日常生活的微行動.html">科學實證的儀式感：三個讓大腦愛上日常生活的微行動</a>
+                            <a class="past-link" href="2026-04-10-你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學.html">你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學</a>
                             <div class="past-meta">📅 2026-04-10</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-減法人生：當「擁有更少」成為真正的富足.html">減法人生：當「擁有更少」成為真正的富足</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-幸福是刻意練習，還是隨機彩蛋？用「A-vs-B」習慣對比，找到你的日常微光.html">幸福是刻意練習，還是隨機彩蛋？用「A vs B」習慣對比，找到你的日常微光</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-為什麼親手做東西，會讓人感到這麼快樂？五個關於「手作療癒」的科學與心靈解答.html">為什麼親手做東西，會讓人感到這麼快樂？五個關於「手作療癒」的科學與心靈解答</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-孤獨感-vs-獨處力：科學解構「一人時光」對大腦的雙面效應.html">孤獨感 vs 獨處力：科學解構「一人時光」對大腦的雙面效應</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-慢下來的大腦：科學告訴你，為什麼「無所事事」才是最高效的生產力.html">慢下來的大腦：科學告訴你，為什麼「無所事事」才是最高效的生產力</a>
+                            <a class="past-link" href="2026-04-10-5個生活儀式感提案：用微小行動點亮平凡日常.html">5個生活儀式感提案：用微小行動點亮平凡日常</a>
                             <div class="past-meta">📅 2026-04-10</div>
                         </li>
                         <li class="past-item">
@@ -387,12 +340,72 @@
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-我的「空白時光」練習：當我允許自己無所事事.html">我的「空白時光」練習：當我允許自己無所事事</a>
+                            <a class="past-link" href="2026-04-10-數據驅動的極簡革命：科學化「斷捨離」如何重設你的生活與大腦.html">數據驅動的極簡革命：科學化「斷捨離」如何重設你的生活與大腦</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-孤獨感-vs-獨處力：科學解構「一人時光」對大腦的雙面效應.html">孤獨感 vs 獨處力：科學解構「一人時光」對大腦的雙面效應</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-每天做一件「小廢事」，你的快樂會自己長大.html">每天做一件「小廢事」，你的快樂會自己長大</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-囤積與留白：一場關於空間與心靈的對角線戰爭.html">囤積與留白：一場關於空間與心靈的對角線戰爭</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-減法人生：當「擁有更少」成為真正的富足.html">減法人生：當「擁有更少」成為真正的富足</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-為什麼親手做東西，會讓人感到這麼快樂？五個關於「手作療癒」的科學與心靈解答.html">為什麼親手做東西，會讓人感到這麼快樂？五個關於「手作療癒」的科學與心靈解答</a>
                             <div class="past-meta">📅 2026-04-10</div>
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #b88b4a;">生活</span>
                             <a class="past-link" href="2026-04-10-獨處是寂寞，還是自由的開始？重新定義你與自己的關係.html">獨處是寂寞，還是自由的開始？重新定義你與自己的關係</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-科學實證的儀式感：三個讓大腦愛上日常生活的微行動.html">科學實證的儀式感：三個讓大腦愛上日常生活的微行動</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-**手機請假中：5個讓螢幕自動熄滅的快樂練習**.html">**手機請假中：5個讓螢幕自動熄滅的快樂練習**</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-數位超載警報：科學實證的「手機排毒」四步驟，重拾大腦專注力與生活質感.html">數位超載警報：科學實證的「手機排毒」四步驟，重拾大腦專注力與生活質感</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-幸福是刻意練習，還是隨機彩蛋？用「A-vs-B」習慣對比，找到你的日常微光.html">幸福是刻意練習，還是隨機彩蛋？用「A vs B」習慣對比，找到你的日常微光</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-慢下來的大腦：科學告訴你，為什麼「無所事事」才是最高效的生產力.html">慢下來的大腦：科學告訴你，為什麼「無所事事」才是最高效的生產力</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-**指尖上的心靈綠洲：當編織成為你的內在修復術**.html">**指尖上的心靈綠洲：當編織成為你的內在修復術**</a>
+                            <div class="past-meta">📅 2026-04-10</div>
+                        </li>
+                        <li class="past-item">
+                            <span class="past-badge" style="background: #b88b4a;">生活</span>
+                            <a class="past-link" href="2026-04-10-別再被思緒綁架三個小練習，幫你找回當下的平靜.html">別再被思緒綁架！三個小練習，幫你找回當下的平靜</a>
                             <div class="past-meta">📅 2026-04-10</div>
                         </li>
                         <li class="past-item">
@@ -407,55 +420,10 @@
                         </li>
                         <li class="past-item">
                             <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-囤積與留白：一場關於空間與心靈的對角線戰爭.html">囤積與留白：一場關於空間與心靈的對角線戰爭</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-別再被思緒綁架三個小練習，幫你找回當下的平靜.html">別再被思緒綁架！三個小練習，幫你找回當下的平靜</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-**指尖上的心靈綠洲：當編織成為你的內在修復術**.html">**指尖上的心靈綠洲：當編織成為你的內在修復術**</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學.html">你的家，真的需要那第三個馬克杯嗎？從一杯咖啡開始的減法幸福學</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-每天做一件「小廢事」，你的快樂會自己長大.html">每天做一件「小廢事」，你的快樂會自己長大</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-5個生活儀式感提案：用微小行動點亮平凡日常.html">5個生活儀式感提案：用微小行動點亮平凡日常</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-數據驅動的極簡革命：科學化「斷捨離」如何重設你的生活與大腦.html">數據驅動的極簡革命：科學化「斷捨離」如何重設你的生活與大腦</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-**手機請假中：5個讓螢幕自動熄滅的快樂練習**.html">**手機請假中：5個讓螢幕自動熄滅的快樂練習**</a>
-                            <div class="past-meta">📅 2026-04-10</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #b88b4a;">生活</span>
-                            <a class="past-link" href="2026-04-10-數位超載警報：科學實證的「手機排毒」四步驟，重拾大腦專注力與生活質感.html">數位超載警報：科學實證的「手機排毒」四步驟，重拾大腦專注力與生活質感</a>
+                            <a class="past-link" href="2026-04-10-我的「空白時光」練習：當我允許自己無所事事.html">我的「空白時光」練習：當我允許自己無所事事</a>
                             <div class="past-meta">📅 2026-04-10</div>
                         </li>
                     </ul>
-                </div>
-                
-                <div class="sidebar-col">
-                    <div class="section-title">📚 歷史歸檔</div>
-                    <p style="color: var(--stone); font-size: 0.85rem;">此分類共 20 篇文章</p>
                 </div>
             </div>
         </div>
