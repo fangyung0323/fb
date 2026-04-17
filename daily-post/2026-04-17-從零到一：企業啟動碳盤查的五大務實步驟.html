@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <title>從零到一：企業啟動碳盤查的五大務實步驟 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,109 +256,75 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #1e6f5c;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">碳關稅來敲門！台灣企業的「綠色生存戰」開打</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">碳關稅來敲門！台灣企業的「綠色生存戰」開打嘿，你有沒有發現，最近「碳關稅」這三個字，在財經新聞裡出現的頻率越來越高？它聽起來有點遙遠，但其實正悄悄影響著我們身邊的產業、工作，甚至未來的物價。今天，就讓我們來聊聊這個國際新規矩，以及台灣該如何接招！簡單來說，碳關稅就像是國際貿易的「碳排放門票」。歐盟率先推出的「碳邊境調整機制」（CBAM），以及美國等其他國家正在規劃的類似措施，核心精神就是：如果你想把產品賣到我的國家，你的生產過程必須符合我的低碳標準，否則就要多付一筆「碳關稅」。這對台灣影響有多大？非常大！ 台灣是出口導向經濟體，我們的鋼鐵、鋁、水泥、螺絲螺帽、甚至電子零組件等主力出口產品，很多...</div>
-                        <a href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 碳盤查</div>
+            <h1 class="article-title">從零到一：企業啟動碳盤查的五大務實步驟</h1>
+            <div class="article-date">📅 2026年04月17日</div>
+            <div class="article-content">從零到一：企業啟動碳盤查的五大務實步驟<br><br>在淨零浪潮與供應鏈要求下，「碳盤查」已從環保口號變成企業營運的必備體檢。根據世界經濟論壇報告，全球超過 20% 的大企業已承諾淨零目標，而其基礎正是精確的碳盤查。對許多企業而言，啟動第一步最為困難。本文將以清晰的步驟，引導企業系統化地展開首次碳盤查。<br><br>---<br><br>步驟一：確立盤查目的與範疇——釐清「為何做」與「做到哪」<br><br>在投入資源前，企業必須先定義清晰的目標，這將決定後續工作的深度與廣度：<br>*   驅動力分析：是為了回應客戶要求（如蘋果、Google的供應鏈規範）、符合法規（如台灣的《氣候變遷因應法》）、爭取綠色融資，還是提升品牌形象與競爭力？<br>*   選擇盤查範疇：依國際標準ISO 14064或GHG Protocol，碳排放分為三範疇：<br>    *   範疇一（直接排放）：來自公司擁有的設備，如鍋爐、公務車燃油。<br>    *   範疇二（間接能源排放）：來自外購的電力、蒸汽、熱能。<br>    *   範疇三（其他間接排放）：價值鏈上下游的排放，如員工通勤、採購的原料、產品使用與廢棄處理。首次盤查建議從範疇一、二著手，因其數據掌控度較高。<br><br>步驟二：組成任務小組與取得共識——「誰來做」是關鍵<br><br>碳盤查是跨部門協作工程，絕非僅靠環安或永續部門就能完成。<br>*   成立跨部門小組：成員應包含高階主管（負責決策與資源）、財務（能源費用、採購數據）、廠務/設施（能源消耗記錄）、採購（供應商數據）、人資（差旅統計）等。<br>*   進行內部宣導與訓練：向全體員工說明碳盤查的重要性與其工作可能涉及的數據提供，建立內部共識，減少推行阻力。<br><br>步驟三：界定組織邊界與收集數據——建立「數據地圖」<br><br>此步驟是盤查最核心的實作環節。<br>*   設定組織邊界：決定盤查範圍是單一廠區、分公司，還是整個集團。常用方法有「控制權法」（對營運有財務或營運控制權的納入）或「股權比例法」。<br>*   識別排放源：依據選定的範疇，列出所有排放源清單。例如：各電表、加油紀錄、冷媒填充紀錄、公務里程、廢棄物重量等。<br>*   系統化收集數據：建立數據收集表單與責任分工。關鍵在於取得完整、連續的活動數據（如用電度數、汽油公升數）。數據品質決定盤查結果的可信度。<br><br>步驟四：計算碳排放量——套用公式與係數<br><br>將活動數據轉化為二氧化碳當量（CO₂e）。<br>*   公式：活動數據 × 排放係數 = 碳排放量<br>    *   活動數據：來自步驟三的實際消耗量。<br>    *   排放係數：需採用公認的係數，如台灣環保署公告的係數、國際能源署（IEA）或IPCC的數據。例如：使用1度電（kWh）在台灣的電力排放係數約為 0.495公斤CO₂e（2022年係數）。<br>*   使用工具輔助：可從環保署的溫室氣體排放係數管理表起步，或導入碳盤查軟體以提升計算效率與準確性。<br><br>步驟五：製作報告與規劃改善——從「盤查」到「管理」<br><br>計算完成並非結束，而是碳管理的開始。<br>*   建立盤查報告書：文件化所有過程、假設、數據來源與計算結果。這份報告是未來查證、對外溝通與減量規劃的基礎。<br>*   分析熱點與設定目標：找出排放量最大的來源（例如：某高耗能設備或特定製程），據此訂定具體的減量目標與行動方案，如更換節能設備、安裝再生能源、優化物流路線等。<br>*   考慮外部查證：若為了公信力（如參與碳交易、回應大型客戶），可尋求第三方查證機構對盤查結果進行確信，取得查證聲明書。<br><br>---<br><br>啟動碳盤查如同為企業建立一份「碳健檢報告」。透過上述五步驟，企業能從無到有，系統性地掌握自身的碳排放輪廓，將模糊的永續承諾，轉化為具體的數據與行動藍圖。這不僅是風險管理，更是驅動創新、發現節能商機的關鍵起點。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回所有文章</a> &nbsp;|&nbsp;
+                    <a href="carbon.html">← 返回碳盤查分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -368,9 +334,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -427,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
