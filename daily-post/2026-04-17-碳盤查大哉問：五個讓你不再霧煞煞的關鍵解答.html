@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <title>碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,134 +256,75 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #1e6f5c;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">從零到一：企業啟動碳盤查的五大務實步驟</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">從零到一：企業啟動碳盤查的五大務實步驟在淨零浪潮與供應鏈要求下，「碳盤查」已從環保口號變成企業營運的必備體檢。根據世界經濟論壇報告，全球超過 20% 的大企業已承諾淨零目標，而其基礎正是精確的碳盤查。對許多企業而言，啟動第一步最為困難。本文將以清晰的步驟，引導企業系統化地展開首次碳盤查。---步驟一：確立盤查目的與範疇——釐清「為何做」與「做到哪」在投入資源前，企業必須先定義清晰的目標，這將決定後續工作的深度與廣度：*   驅動力分析：是為了回應客戶要求（如蘋果、Google的供應鏈規範）、符合法規（如台灣的《氣候變遷因應法》）、爭取綠色融資，還是提升品牌形象與競爭力？*   選擇盤查範疇：依...</div>
-                        <a href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答.html">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？.html">淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 碳盤查</div>
+            <h1 class="article-title">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</h1>
+            <div class="article-date">📅 2026年04月17日</div>
+            <div class="article-content">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答<br><br>「公司最近要開始做碳盤查了，到底什麼是碳盤查啊？」  <br>「聽說碳盤查很複雜，真的需要做嗎？」  <br>「我只是小公司，也要跟進嗎？」<br><br>如果你心中也曾浮現這些疑問，別擔心！今天我們就用最白話的方式，一次搞懂碳盤查的常見問題，讓你從「碳焦慮」變成「碳知道」。<br><br>---<br><br>❓ 問題一：碳盤查聽起來好專業，到底是在「盤」什麼？<br><br>分析： 很多人聽到「盤查」就想到警察辦案或會計查帳，感覺嚴肅又複雜。其實核心概念很生活化。<br><br>解答： 想像一下你記帳的樣子。碳盤查就是幫企業或組織做「碳排放記帳」，系統性地計算一段時間內（通常是一年）所有活動產生的溫室氣體排放量。就像你知道錢花去哪才能節流，知道碳從哪來，才能有效減量。盤查的範圍通常分為三大範疇：公司直接排放（如鍋爐、公務車）、能源間接排放（外購電力），以及其他間接排放（如員工通勤、供應鏈）。<br><br>---<br><br>❓ 問題二：我的公司很小，沒有排煙大煙囪，也需要做嗎？<br><br>分析： 這是中小企業最常見的迷思，以為碳排放大戶才需要擔心。<br><br>解答： 即使沒有工廠，只要公司用電、員工上班、採購物品、產生垃圾，就會有碳排放。更重要的是，國際供應鏈的要求正在層層傳導。許多國際品牌要求供應商提供碳數據，這股壓力正從大企業蔓延到中小企業。提早了解自己的碳足跡，不僅是應對未來法規，更是提升競爭力的關鍵。<br><br>---<br><br>❓ 問題三：自己做很麻煩，可以全部外包嗎？<br><br>分析： 市面上有許多顧問服務，但完全外包可能不是最佳解。<br><br>解答： 碳盤查的「數據收集」必須由內部人員執行，因為只有你最清楚公司的運作細節，例如用了多少電、跑了多少趟運輸、採購了哪些物料。顧問的角色通常是提供方法學、協助計算、確保符合國際標準（如ISO 14064）。建議的模式是「內部主導，外部輔助」，既能掌握核心數據，又能確保專業性。<br><br>---<br><br>❓ 問題四：做完盤查報告，然後呢？擺著生灰塵嗎？<br><br>分析： 盤查不是終點，而是減碳旅程的起點。<br><br>解答： 報告完成後，最重要的是「解讀數據」和「採取行動」。例如，發現用電產生的碳排放佔比最高，就可以規劃節電措施或購買綠電；如果運輸碳排驚人，可以優化物流路線。盤查結果是制定減量目標、規劃行動方案的基礎，也能用來向客戶、投資人展示你的永續承諾。<br><br>---<br><br>❓ 問題五：個人可以做「碳盤查」嗎？<br><br>分析： 當然可以！個人碳足跡計算就是一種生活化的碳盤查。<br><br>解答： 你可以從記錄日常習慣開始：每月電費燃氣費、交通方式與里程、飲食選擇（特別是肉類消費）、購物頻率等。許多碳足跡計算APP或網站可以幫你估算。了解自己的碳排熱點後，就能有意識地調整，例如多搭乘大眾運輸、減少食物浪費、選擇節能家電。個人的行動集合起來，就是巨大的改變力量。<br><br>---<br><br>🌱 結語：碳盤查，是責任也是機會<br><br>碳盤查不是額外的負擔，而是現代企業與個人的「新基本功」。它像一面鏡子，讓我們看清自己與環境的互動關係，從中找到節省成本、創新營運、展現品牌價值的機會。<br><br>從一個小問題開始，踏出第一步吧！也許是先計算自己通勤的碳排放，或是盤點辦公室一個月的用電量。每個行動，都是朝向永續未來的重要積累。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="carbon.html">← 返回碳盤查文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -393,9 +334,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -452,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
