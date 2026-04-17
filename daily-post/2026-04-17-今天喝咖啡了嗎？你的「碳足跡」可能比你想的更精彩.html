@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <title>今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！ - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,114 +256,75 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #1e6f5c;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">從零到一：企業啟動碳盤查的五大務實步驟</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">從零到一：企業啟動碳盤查的五大務實步驟在淨零浪潮與供應鏈要求下，「碳盤查」已從環保口號變成企業營運的必備體檢。根據世界經濟論壇報告，全球超過 20% 的大企業已承諾淨零目標，而其基礎正是精確的碳盤查。對許多企業而言，啟動第一步最為困難。本文將以清晰的步驟，引導企業系統化地展開首次碳盤查。---步驟一：確立盤查目的與範疇——釐清「為何做」與「做到哪」在投入資源前，企業必須先定義清晰的目標，這將決定後續工作的深度與廣度：*   驅動力分析：是為了回應客戶要求（如蘋果、Google的供應鏈規範）、符合法規（如台灣的《氣候變遷因應法》）、爭取綠色融資，還是提升品牌形象與競爭力？*   選擇盤查範疇：依...</div>
-                        <a href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 碳盤查</div>
+            <h1 class="article-title">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</h1>
+            <div class="article-date">📅 2026年04月17日</div>
+            <div class="article-content">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！<br><br>嗨，朋友！今天早上你喝咖啡了嗎？在享受那口濃郁香醇的同時，你有沒有想過，這杯咖啡從產地到你的手中，一路上留下了多少看不見的「腳印」？  <br>沒錯，我們今天要聊的就是 「碳足跡」——它聽起來有點專業，但其實跟我們的日常生活緊緊相連，就像你手中的那杯咖啡一樣親切。<br><br>碳足跡 vs. 碳盤查：它們哪裡不一樣？<br><br>你可能聽過「碳盤查」，也聽過「碳足跡」，它們常常一起出現，但其實是兩個不同的概念。讓我們用簡單的 A vs. B 來比較一下：<br><br>A. 碳足跡  <br>- 是什麼：就像你走路會留下腳印一樣，任何產品或活動在生命週期中產生的溫室氣體總量，就是它的碳足跡。  <br>- 範圍：通常針對 單一產品、服務或個人行為（例如：一杯咖啡、一趟旅行、你一個月的生活）。  <br>- 生活例子：從咖啡豆種植、加工、運輸、到你沖泡時用的電力，甚至牛奶和糖的來源，全部加總起來，就是這杯咖啡的碳足跡。<br><br>B. 碳盤查  <br>- 是什麼：更像是一次 全面的體檢，系統性地計算一個組織、公司或國家在某段時間內產生的所有溫室氣體。  <br>- 範圍：針對 整體組織或區域（例如：一家咖啡廳一整年的排放、一座城市的總碳排）。  <br>- 生活比喻：如果碳足跡是計算「你個人今天吃了多少卡路里」，碳盤查就是「幫整個家庭做一整年的飲食報告」。<br><br>簡單說：碳足跡是 微觀、個人化 的；碳盤查是 宏觀、系統化 的。兩者都重要，但碳足跡是我們每天都能直接感受的起點！<br><br>從一杯咖啡，看見碳足跡的旅程<br><br>讓我們跟著一杯拿鐵的旅程，看看碳足跡怎麼累積：<br><br>1. 生產端：咖啡豆在巴西農場種植，需要施肥、灌溉，農機具會排放二氧化碳。  <br>2. 加工與運輸：豆子烘乾、加工後，用貨船運到台灣，再由卡車送到咖啡廳——這段海陸運輸燃燒的燃油，貢獻了大量碳排。  <br>3. 沖泡階段：咖啡廳用電磨豆、用瓦斯煮咖啡，你外帶的紙杯和杯蓋，製造過程也會產生碳排。  <br>4. 附加品：如果你加了牛奶，牧場的牛隻本身就會排放甲烷（一種強效溫室氣體）；糖的種植與精製也是一段碳旅程。<br><br>驚人的是：一杯普通拿鐵的碳足跡，大約是 0.3 公斤二氧化碳當量，相當於讓一盞 10W LED 燈泡連續亮 30 小時！  <br>而如果你選擇「黑咖啡＋自帶環保杯」，碳足跡可能直接減少 三分之一。<br><br>為什麼要在意這些看不見的腳印？<br><br>計算碳足跡不是為了讓我們有罪惡感，而是為了 更明智地選擇。就像你會比較商品的價格和成分，了解碳足跡能幫助我們：<br><br>- 做出低碳選擇：例如優先選本地產的食材、支持環保包裝的品牌。  <br>- 推動企業改變：當越來越多人關注碳足跡，企業也會更願意採用綠色製程。  <br>- 為氣候行動出力：減少碳足跡，就是直接為減緩全球暖化貢獻一份力。<br><br>輕鬆減碳，從下一杯咖啡開始<br><br>你不必立刻成為環保專家，只要在生活中多一點點意識：  <br>- 需要外帶時，拿出你的環保杯。  <br>- 偶爾選擇植物奶替代牛奶。  <br>- 支持有碳標籤或環保認證的產品。<br><br>這些小小的選擇，就像為地球投下一張溫柔的贊成票。  <br>記住：碳足跡不是束縛，而是一種新的生活視角——讓我們在享受美好的同時，也對世界更友善。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回所有文章</a> &nbsp;|&nbsp;
+                    <a href="carbon.html">← 返回碳盤查分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -373,9 +334,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -432,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
