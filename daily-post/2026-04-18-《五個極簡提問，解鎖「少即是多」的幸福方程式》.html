@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>♻️ 永續文章 - 蕨積每日文章</title>
+    <title>《五個極簡提問，解鎖「少即是多」的幸福方程式》 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,124 +256,75 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #b88b4a;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>♻️ 永續文章</h1>
-                <p>蕨積每日文章 - 永續分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #2c7a4d;">📌 永續</div>
-                        <h1 class="latest-title">企業賺錢也能救地球？三個顛覆你想像的永續實戰案例</h1>
-                        <div class="latest-date">📅 2026-04-16</div>
-                        <div class="latest-content">標題：企業賺錢也能救地球？三個顛覆你想像的永續實戰案例問：企業追求「永續」，不就是做做公益、美化形象而已嗎？答： 這可能是最大的誤解。現在的領先企業，是將永續思維「核心化」，徹底融入商業模式與創新引擎。這不只是「做好事」，更是「做對事」——關乎長期生存、降低成本、吸引人才，並創造新商機。讓我們跳脫節能減碳的框架，看看幾個更深刻的案例。問：有具體例子嗎？企業是怎麼「核心化」實踐的？答： 當然有。我們來看三個不同層面的經典做法：1.  從「賣產品」到「賣服務」：IKEA 的家具租賃革命    你知道 IKEA 正在多國推行「家具訂閱制」嗎？你可以租用一張書桌、一組沙發，用膩了或搬家時就退還。這不只...</div>
-                        <a href="2026-04-16-企業賺錢也能救地球？三個顛覆你想像的永續實戰案例.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-企業賺錢也能救地球？三個顛覆你想像的永續實戰案例.html">企業賺錢也能救地球？三個顛覆你想像的永續實戰案例</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-屋頂上的發電廠：我家如何靠陽光和微風省下一半電費.html">屋頂上的發電廠：我家如何靠陽光和微風省下一半電費</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍.html">衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-你今天「吃」永續了嗎？餐桌上的美味革命.html">你今天「吃」永續了嗎？餐桌上的美味革命</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？.html">從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活圈.html">從日常小事做起，打造你的永續生活圈</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活提案.html">從日常小事做起，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html">**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 生活</div>
+            <h1 class="article-title">《五個極簡提問，解鎖「少即是多」的幸福方程式》</h1>
+            <div class="article-date">📅 2026年04月18日</div>
+            <div class="article-content">《五個極簡提問，解鎖「少即是多」的幸福方程式》<br><br>你是否曾覺得，生活被物品、行程與數位資訊塞滿，但內心卻越來越空？我們總在追求「更多」，但「更多」真的等於「更好」嗎？今天，讓我們透過五個關鍵問答，重新校準生活的重心，實踐「少即是多」的簡單生活哲學。<br><br>---<br><br>Q1：我擁有很多東西，為什麼還是感到匱乏？<br><br>這正是「擁擠悖論」：當物品超過了我們的管理與情感承載能力，它們便從「資產」轉為「負擔」。每件物品都佔據你的物理與心智空間，需要整理、清潔、維護，無形中消耗你的能量。<br><br>*   行動清單：啟動「減法」思維<br>    *   一進一出原則：購買一件新物品前，先問自己「它會取代什麼？」或「我願意為它淘汰一件舊物嗎？」<br>    *   啟動「90/90法則」：過去90天內沒使用過，且未來90天內沒有明確使用計畫的物品，可以考慮放手。<br>    *   區分「需要」與「想要」：購物前暫停24小時，釐清是真正的需求，還是瞬間的慾望或填補空虛。<br><br>Q2：資訊爆炸的時代，如何為大腦減壓？<br><br>我們的大腦並非設計來無止盡吸收碎片化資訊。過載會導致焦慮、注意力分散與決策疲勞。<br><br>*   行動清單：打造數位極簡主義<br>    *   定時清理：每週設定一個「數位排毒時段」，關閉非必要通知，整理手機App與社群媒體追蹤名單。<br>    *   主動選擇：用「深度閱讀」取代「無意識滑動」。每天設定30分鐘，專心讀一本書或一篇長文，取代零碎瀏覽。<br>    *   建立「資訊防火牆」：睡前1小時與起床後1小時，避免接觸新聞與社交媒體，保護心智的寧靜。<br><br>Q3：行程滿檔就是充實嗎？<br><br>將時間填滿不等於活得充實。真正的充實來自於對重要人事物的「深度投入」。<br><br>*   行動清單：精簡你的時間配置<br>    *   列出優先級：每週初，列出最重要的3件「大事」。確保它們獲得最優質的時間與精力。<br>    *   學會拒絕：對不符合你核心價值或優先事項的邀約，禮貌而堅定地說「不」。你的時間是你最寶貴的資源。<br>    *   留白時間：刻意在行程中安排「空白時段」。這段無計畫的時間，往往是靈感、休息或與自己對話的黃金時刻。<br><br>Q4：減少物質後，生活重心該放在哪裡？<br><br>當你清除了多餘的雜物與干擾，騰出的空間正好用來滋養真正重要的事物。<br><br>*   行動清單：投資無形資產<br>    *   深化關係：用省下的購物與滑手機時間，與家人朋友進行一場面對面的深度對話，或共同完成一件小事。<br>    *   體驗勝於擁有：將部分消費預算轉為「體驗基金」，用於學習新技能、接觸大自然、或一場小旅行，創造長久的回憶。<br>    *   關注內在成長：透過冥想、寫日記、散步，練習與自己相處，培養內在的穩定與覺察力。<br><br>Q5：「少即是多」聽起來像在犧牲，如何堅持？<br><br>這不是剝奪，而是「刻意選擇」。重點不在於你失去了什麼，而在於你為自己選擇了什麼。<br><br>*   行動清單：建立正向回饋循環<br>    *   從小處開始：從清理一個抽屜、取消一個訂閱開始，立即感受「減負」帶來的輕鬆感。<br>    *   慶祝小勝利：每完成一個簡化步驟，肯定自己的選擇。感受空間變整潔、時間變充裕、思緒變清晰的愉悅。<br>    *   聚焦於「獲得」：時時提醒自己，你獲得了更多時間、空間、金錢、清晰與內心的平靜。這是一場為自己贏回生活主導權的溫柔革命。<br><br>---<br><br>簡單生活，不是終點，而是一種持續的動態平衡。它邀請我們不斷地自我詢問：「這是否真正增加了我的幸福感？」透過每一次有意識的選擇，我們不是在減少生活，而是在為真正重要的事物騰出空間，讓「少」醞釀出更豐盈、更自由的「多」。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="life.html">← 返回生活文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -383,9 +334,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -442,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
