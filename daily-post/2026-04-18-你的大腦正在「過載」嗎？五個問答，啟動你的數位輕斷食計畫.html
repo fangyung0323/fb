@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <title>你的大腦正在「過載」嗎？五個問答，啟動你的數位輕斷食計畫 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,139 +256,75 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #b88b4a;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+    .article-footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e0d6cc;
+        color: var(--stone);
+        font-size: 0.9rem;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--fern);
+        text-decoration: none;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？當我們談論個人減碳行動時，「省電」和「省水」是最常被提及的兩大方向。多數人直覺認為「省電」直接減少燃煤發電的碳排放，效果顯著；而「省水」則偏向資源保育，與碳排關聯較低。但事實真的如此嗎？讓我們透過碳盤查的視角，用數據來一場生活減碳行動的對比分析。核心目標的異同：能源 vs. 系統首先，兩者的核心減碳邏輯不同。*   省電：目標直接明確，即減少「用電量」。電力在台灣的碳排放係數約為0.495公斤CO₂e/度（2022年數據）。因此，每節省1度電，幾乎等同直接減少約0.5公斤的碳排。關閉不必要的燈具、使用節能家電、調高空調溫度等行動，其減碳效益...</div>
-                        <a href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-2024年3月15日-星期五-天氣：有點霧霾，但陽光努力穿透中.html">2024年3月15日 星期五 天氣：有點霧霾，但陽光努力穿透中</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？.html">淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答.html">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 生活</div>
+            <h1 class="article-title">你的大腦正在「過載」嗎？五個問答，啟動你的數位輕斷食計畫</h1>
+            <div class="article-date">📅 2026年04月18日</div>
+            <div class="article-content">標題：你的大腦正在「過載」嗎？五個問答，啟動你的數位輕斷食計畫<br><br>你是不是也這樣？早上睜眼第一件事是摸手機，通勤時指尖在螢幕上滑個不停，睡前最後一眼看的還是發光的通知。我們的生活被數位資訊淹沒，大腦像一臺永不關機的伺服器，持續高溫運轉。今天，讓我們透過幾個關鍵問答，重新奪回對時間與注意力的主導權。<br><br>Q1：為什麼我需要「數字排毒」？這不只是少滑手機那麼簡單吧？<br><br>當然不是。數字排毒的核心，是修復被碎片化資訊損害的認知功能。科學研究指出，過度使用智能裝置會導致：<br>*   注意力分散：頻繁切換任務（如回訊息、看新聞、刷社群），會大幅降低我們專注與深度思考的能力。<br>*   焦慮感提升：社群媒體上的「比較心態」與對未讀通知的期待，會持續刺激壓力荷爾蒙。<br>*   睡眠品質下降：螢幕藍光抑制褪黑激素分泌，直接干擾你的生理時鐘。<br>*   真實社交能力減弱：面對面的非語言溝通（如眼神、語氣）機會減少。<br><br>所以，排毒不是要你拋棄科技，而是建立一個更健康、更有意識的「人機關係」。<br><br>Q2：我試過關閉通知，但總是忍不住自己點開App。有什麼具體的「物理隔離法」？<br><br>意志力常常敗給設計精良的「成癮機制」。與其對抗心癮，不如直接改變環境：<br>*   設定「無手機聖地」：明確規定臥室（尤其是床上）、餐桌、洗手間為手機禁區。買一個傳統鬧鐘吧，這是解放床頭的第一步。<br>*   進行「視覺降噪」：將手機主螢幕「極簡化」。只保留工具性App（地圖、相機），將所有社交、娛樂App收進資料夾，並移到次頁。眼不見為淨。<br>*   擁抱「笨科技」：在專注工作或享受休閒時，改用實體書籍、紙本筆記本、傳統相機。這能切斷你「一機萬用」的慣性路徑。<br>*   給手機一個「家」：進門後，固定將手機放在玄關的某個盤子或抽屜裡，而非隨身攜帶。<br><br>Q3：有哪些「數位儀式」可以幫助我建立新習慣？<br><br>習慣需要儀感來鞏固。試試建立這些每日小儀式：<br>1.  晨間黃金1小時：起床後的第一個小時，絕對不碰手機。用來喝水、伸展、準備早餐、規劃今日要事。<br>2.  「單任務」用餐時間：吃飯時，只專心吃飯。觀察食物味道、咀嚼口感，或與同桌的人好好聊天。<br>3.  睡前30分鐘緩衝區：提前半小時將手機調至「飛航模式」並放在遠處充電。用閱讀、冥想、輕音樂或與家人伴侶閒聊取代。<br>4.  每週一次「慢娛樂」：規劃一個完全不需用手機記錄或分享的活動，例如爬山、畫畫、做手工、純粹散步。重點是「體驗」本身。<br><br>Q4：如果工作必須長時間用電腦和手機，該怎麼排毒？<br><br>對於數位工作者，關鍵在於 「主動掌控」而非「被動反應」：<br>*   時間盒管理法：使用番茄鐘技巧，設定25分鐘的「全力專注工作時間」，期間關閉所有通訊軟體與郵件通知。時間到後，休息5分鐘離開座位，再看訊息。<br>*   瀏覽器分頁極簡化：養成隨手關閉不用的瀏覽器分頁的習慣，保持視窗清潔，有助於減輕大腦的認知負擔。<br>*   區分「創作模式」與「收發模式」：將一天劃分為幾個時段，例如上午9-11點是深度創作不斷網時段，下午3-4點才統一處理郵件與訊息。並在簽名檔或狀態欄告知同事你的回應節奏。<br><br>Q5：開始排毒後，我可能會經歷什麼？如何堅持？<br><br>初期你可能會感到無聊、焦躁，甚至出現「幻聽」，覺得手機在震動。這完全正常，代表你的大腦正在戒斷「多巴胺速效刺激」。請：<br>*   記錄微小的快樂：寫下或留意那些因為放下手機而獲得的時刻：發現路邊的小花、與家人更深入的對話、讀完一本書的滿足感。<br>*   找到替代的滋養來源：準備好清單，當無聊感襲來時，你可以立刻去做（例如澆花、做10個伏地挺身、整理一個抽屜）。<br>*   抱持「進步，而非完美」的心態：偶爾破戒沒關係，重點是整體趨勢在改善。每週回顧，為自己的任何一點改變感到驕傲。<br><br>數字排毒，最終是一場通往「內心清晰」的練習。當我們減少向外的資訊索取，才能更清晰地聽見內在的聲音，感受當下生活的質地與溫度。從今天的一個小改變開始，把最寶貴的注意力，投資回你自己真實的生活裡。<br><br>🌿 蕨積 - 讓生活多一點綠</div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="life.html">← 返回生活文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -398,9 +334,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -457,7 +391,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
