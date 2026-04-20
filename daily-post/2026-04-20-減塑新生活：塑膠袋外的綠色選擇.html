@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <meta name="description" content="分享三個簡單減塑技巧，讓環保成為日常習慣，輕鬆愛地球。">
+    <meta name="article-summary" content="分享三個簡單減塑技巧，讓環保成為日常習慣，輕鬆愛地球。">
+    <meta name="article-keypoints" content='["環保袋不只是購物袋，更是生活態度", "重複使用容器，減少一次性包裝", "聰明購物，從源頭減少塑膠需求"]'>
+    <title>減塑新生活：塑膠袋外的綠色選擇 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,139 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？當我們談論個人減碳行動時，「省電」和「省水」是最常被提及的兩大方向。多數人直覺認為「省電」直接減少燃煤發電的碳排放，效果顯著；而「省水」則偏向資源保育，與碳排關聯較低。但事實真的如此嗎？讓我們透過碳盤查的視角，用數據來一場生活減碳行動的對比分析。核心目標的異同：能源 vs. 系統首先，兩者的核心減碳邏輯不同。*   省電：目標直接明確，即減少「用電量」。電力在台灣的碳排放係數約為0.495公斤CO₂e/度（2022年數據）。因此，每節省1度電，幾乎等同直接減少約0.5公斤的碳排。關閉不必要的燈具、使用節能家電、調高空調溫度等行動，其減碳效益...</div>
-                        <a href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-2024年3月15日-星期五-天氣：有點霧霾，但陽光努力穿透中.html">2024年3月15日 星期五 天氣：有點霧霾，但陽光努力穿透中</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？.html">淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答.html">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">減塑新生活：塑膠袋外的綠色選擇</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>阿嬤的菜籃啟示錄</h2><p>還記得小時候陪阿嬤去市場買菜嗎？她總是拎著那個洗得發白的帆布袋，裡面裝著各種顏色的網袋和保鮮盒。當時覺得阿嬤好麻煩，為什麼不用攤販給的塑膠袋就好？現在我才明白，阿嬤才是真正的環保先鋒！</p><h2>環保袋的華麗變身</h2><p>說到減塑，大家第一個想到的可能是環保購物袋。但你知道嗎？現在的環保袋已經不只是「袋子」了！我最近發現一種可折疊成小方塊的環保袋，放進包包完全不佔空間，遇到臨時購物需求時，就像變魔術一樣拿出來使用。還有那種防水材質的，買魚買肉也不怕弄濕包包。最酷的是，有些設計師把環保袋做得超時尚，背出門還被朋友問在哪裡買的！</p><h2>容器革命：重複使用最聰明</h2><p>除了袋子，容器也是減塑的重要戰場。我開始學著阿嬤，帶玻璃保鮮盒去買豆腐、涼菜，攤販老闆還會因為不用提供塑膠盒而給我折扣呢！買飲料時，我隨身帶著不鏽鋼吸管和環保杯，不僅減少塑膠垃圾，還能享受店家提供的自備容器優惠。最近更發現有些超市設有「裸賣區」，讓顧客自備容器裝米、雜糧、清潔劑，完全避開塑膠包裝。</p><h2>聰明購物三心法</h2><p>第一心法：選擇裸裝商品。買水果時挑那些沒有用保鮮膜包裝的，買麵包選紙袋裝的。第二心法：支持環保包裝。現在很多品牌開始使用可分解材質，或是設計成容易回收的包裝。第三心法：少量多次購買。與其一次買大量用塑膠包裝的商品，不如分次購買剛好需要的量，減少包裝浪費。</p><h2>減塑其實很好玩</h2><p>我發現減塑就像玩遊戲，每次成功避開一個塑膠袋或包裝，就覺得自己為地球加了一分。朋友們看到我的改變，也開始分享他們的減塑妙招：有人用蜂蠟布代替保鮮膜，有人用竹製牙刷代替塑膠牙刷。我們甚至組了個「減塑挑戰群組」，每週分享自己的減塑成果，互相打氣。</p><p>減塑不是要大家過得苦哈哈，而是找到更聰明、更永續的生活方式。從今天開始，試著在包包裡放個環保袋，帶個保鮮盒出門，你會發現，原來愛地球可以這麼簡單又有成就感！</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -398,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -457,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
