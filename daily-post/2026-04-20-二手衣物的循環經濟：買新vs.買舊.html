@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <meta name="description" content="比較購買新衣與二手衣對環境的影響，探討循環經濟的實踐方式。">
+    <meta name="article-summary" content="比較購買新衣與二手衣對環境的影響，探討循環經濟的實踐方式。">
+    <meta name="article-keypoints" content='["新衣生產的環境代價", "二手衣的循環價值", "個人行動的永續影響"]'>
+    <title>二手衣物的循環經濟：買新vs.買舊 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,139 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">從零到一：企業啟動碳盤查的五大務實步驟</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">從零到一：企業啟動碳盤查的五大務實步驟在淨零浪潮與供應鏈要求下，「碳盤查」已從環保口號變成企業營運的必備體檢。根據世界經濟論壇報告，全球超過 20% 的大企業已承諾淨零目標，而其基礎正是精確的碳盤查。對許多企業而言，啟動第一步最為困難。本文將以清晰的步驟，引導企業系統化地展開首次碳盤查。---步驟一：確立盤查目的與範疇——釐清「為何做」與「做到哪」在投入資源前，企業必須先定義清晰的目標，這將決定後續工作的深度與廣度：*   驅動力分析：是為了回應客戶要求（如蘋果、Google的供應鏈規範）、符合法規（如台灣的《氣候變遷因應法》）、爭取綠色融資，還是提升品牌形象與競爭力？*   選擇盤查範疇：依...</div>
-                        <a href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？.html">淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-2024年3月15日-星期五-天氣：有點霧霾，但陽光努力穿透中.html">2024年3月15日 星期五 天氣：有點霧霾，但陽光努力穿透中</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答.html">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">二手衣物的循環經濟：買新vs.買舊</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>二手衣物的第二人生：循環經濟入門</h2><p>在快時尚盛行的時代，我們習慣用低廉價格購買新衣，穿幾次就丟棄。但你是否想過，這件衣服從生產到丟棄，對地球造成了什麼影響？今天我們透過對比分析，看看「買新衣」與「買二手衣」背後的不同故事。</p><h2>對比分析：新衣生產 vs. 二手循環</h2><p><strong>A. 新衣生產的線性經濟模式</strong></p><p>一件新棉T恤的旅程從棉花田開始：需要約2,700公升的水（相當於一個人兩年半的飲水量），使用農藥與化肥，再經過紡織、染色、縫製、運輸，最後來到你手中。快時尚品牌每年推出數十個新系列，鼓勵消費者不斷購買。結果呢？全球每年有9200萬噸紡織品被丟棄，其中大部分進入垃圾掩埋場或焚化爐，釋放溫室氣體與有毒物質。</p><p><strong>B. 二手衣物的循環經濟模式</strong></p><p>當你選擇二手衣，這件衣服獲得了第二生命。不需要新的資源開採、水資源消耗或化學染劑排放。根據研究，延長衣物壽命9個月，就能減少20-30%的碳足跡、水足跡與廢棄物。二手市場不僅減少浪費，還創造了新的經濟模式：修補、改造、交換、租賃等服務應運而生。</p><h2>比較異同：環境與社會影響</h2><p><strong>相同點：</strong>兩者都滿足我們的穿衣需求，都涉及經濟活動與就業機會。無論新衣或二手衣，最終都會面臨廢棄處理的問題。</p><p><strong>不同點：</strong>新衣生產消耗大量原始資源，產生高碳排與污染；二手衣則最大化現有資源價值，大幅降低環境衝擊。社會層面，新衣產業常與勞工權益爭議相關；二手衣市場則促進社區交流與資源共享。</p><h2>從個人到系統的改變</h2><p>選擇二手衣不只是省錢，更是對線性經濟的溫柔反抗。每次購買都是一次投票，決定我們想要什麼樣的未來。循環經濟不是要求我們完全不買新衣，而是重新思考「需要」與「想要」的界線，優先考慮物品的整個生命週期。</p><p>台灣已有許多二手衣平台、實體商店與交換活動，讓循環經濟變得容易實踐。下次購物前，不妨先問自己：這件衣服我真的需要嗎？有沒有二手選擇？舊衣如何妥善處理？</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -398,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -457,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
