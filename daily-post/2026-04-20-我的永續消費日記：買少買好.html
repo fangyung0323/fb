@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 碳盤查文章 - 蕨積每日文章</title>
+    <meta name="description" content="透過減少購買、選擇耐用產品與支持永續品牌，實踐對環境友善的消費生活。">
+    <meta name="article-summary" content="透過減少購買、選擇耐用產品與支持永續品牌，實踐對環境友善的消費生活。">
+    <meta name="article-keypoints" content='["減少衝動購物，只買真正需要的物品", "選擇高品質、耐用且可修復的產品", "支持環保材質與公平貿易的永續品牌"]'>
+    <title>我的永續消費日記：買少買好 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,139 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>📊 碳盤查文章</h1>
-                <p>蕨積每日文章 - 碳盤查分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #1e6f5c;">📌 碳盤查</div>
-                        <h1 class="latest-title">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</h1>
-                        <div class="latest-date">📅 2026-04-17</div>
-                        <div class="latest-content">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？想像一下，你經營一家深受歡迎的咖啡廳，每天使用數百個一次性紙杯。你深知這不環保，但顧客習慣難改。於是，你宣布咖啡廳實現「碳中和」了！方法不是淘汰紙杯，而是出資在偏遠山坡種下一片森林，用來「吸收」你製造的碳排放。顧客感覺良好，你保住了生意，森林也多了——這聽起來是完美的解決方案嗎？這個小故事，正是全球「碳中和」（Carbon Neutrality）浪潮的縮影。它是一個充滿爭議卻又勢在必行的概念。簡單說，碳中和是指透過減碳行動（如使用再生能源、提升效率）與「碳抵換」（如植樹、投資綠能計畫），讓人為活動產生的溫室氣體排放量，與從大氣中移除的量相互抵...</div>
-                        <a href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？.html">「碳中和」的魔術秀：是歸零神話，還是真實的綠色革命？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-從零到一：企業啟動碳盤查的五大務實步驟.html">從零到一：企業啟動碳盤查的五大務實步驟</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-省電-vs.-省水：哪個才是你日常減碳的「隱形王牌」？.html">省電 vs. 省水：哪個才是你日常減碳的「隱形王牌」？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答.html">碳盤查大哉問：五個讓你不再霧煞煞的關鍵解答</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-2024年3月15日-星期五-天氣：有點霧霾，但陽光努力穿透中.html">2024年3月15日 星期五 天氣：有點霧霾，但陽光努力穿透中</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩.html">今天喝咖啡了嗎？你的「碳足跡」可能比你想的更精彩！</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-碳關稅來敲門台灣企業的「綠色生存戰」開打.html">碳關稅來敲門！台灣企業的「綠色生存戰」開打</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-04-17-淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？.html">淨零賽局：從國家承諾到企業行動，碳盤查如何成為共同的起跑線？</a>
-                            <div class="past-meta">📅 2026-04-17</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始.html">碳盤查：企業與個人邁向淨零的第一步，從「算碳」開始！</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-碳權交易：一場拯救地球的「排放貨幣」遊戲.html">碳權交易：一場拯救地球的「排放貨幣」遊戲</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：淨零競賽開跑企業的「減碳作業」與國家的「氣候考卷」有何不同？**.html">**標題：淨零競賽開跑！企業的「減碳作業」與國家的「氣候考卷」有何不同？**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #1e6f5c;">碳盤查</span>
-                            <a class="past-link" href="2026-03-28-**標題：從「碳盤查」開始，你的每一步都算「樹」**.html">**標題：從「碳盤查」開始，你的每一步都算「樹」！**</a>
-                            <div class="past-meta">📅 2026-03-28</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">我的永續消費日記：買少買好</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>問題：我的衣櫃爆炸了，卻總覺得沒衣服穿</h2><p>今天整理衣櫃時，我看著滿出來的快時尚衣物，突然感到一陣空虛。這些衣服大多只穿幾次就褪色、變形，或是過季後就被我遺忘在角落。我算了一下，光是去年就買了超過三十件衣服，但真正常穿的不到十件。不只衣櫃，家裡堆滿了各種衝動購物買來的雜物——促銷時搶購的廚房小工具、跟風買的流行飾品、用幾次就壞的電子產品。我開始思考：這種消費模式到底帶給我什麼？除了短暫的購物快感，似乎只剩下擁擠的空間、浪費的金錢，以及對環境的無形傷害。</p><h2>分析：為什麼「買更多」不等於「過更好」？</h2><p>我上網查了資料，發現快時尚產業每年產生大量廢棄衣物，許多被送到垃圾掩埋場，分解時還會釋放有害物質。那些廉價產品為了壓低成本，往往使用劣質材料，壽命短暫，形成「買→壞→丟→再買」的惡性循環。更讓我驚訝的是，許多產品在製造過程中消耗大量水資源、能源，並產生污染。我意識到，每一次消費其實都是一次投票，決定我們想要什麼樣的未來。當我選擇便宜但不耐用的商品，等於支持浪費資源的生產模式；當我衝動購買不需要的東西，等於鼓勵過度生產。問題不在於「消費」本身，而在於「如何消費」。</p><h2>解答：我的永續消費實踐三步驟</h2><p>我決定改變，從三個方向開始：第一，<strong>買得更少</strong>。現在購物前我會問自己：「我真的需要嗎？」「未來一年會用超過三十次嗎？」如果答案是否定的，我就放下它。我也開始實踐「一進一出」原則，買一件新衣前，必須先捐出或回收一件舊衣。第二，<strong>買得更好</strong>。我寧願花兩倍的價格買一件材質好、做工細的衣服，而不是買四件便宜貨。我開始尋找可修復的產品，像是鞋子能換底、包包能維修，這樣能用好多年。第三，<strong>支持永續品牌</strong>。我關注使用有機棉、再生材質的品牌，也優先選擇公平貿易認證的產品，確保生產過程對工人友善。這三個改變執行半年後，我的衣櫃清爽了，錢包變厚了，最重要的是，我感覺自己的消費真正有了意義——不再是盲目追逐，而是有意識地選擇。</p><p>永續消費不是要我們完全不買，而是學會聰明地買。當我們「買得更少，買得更好」，不僅省錢省空間，更是對地球的一份溫柔承諾。從今天起，讓我們一起練習：每次打開錢包前，多想三十秒。</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -398,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -457,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
