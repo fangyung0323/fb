@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>♻️ 永續文章 - 蕨積每日文章</title>
+    <meta name="description" content="透過對比分析，探討企業如何實踐永續發展並創造價值。">
+    <meta name="article-summary" content="透過對比分析，探討企業如何實踐永續發展並創造價值。">
+    <meta name="article-keypoints" content='["永續策略的差異化實踐", "環境與社會效益的平衡", "長期競爭力的關鍵因素"]'>
+    <title>企業永續案例：做對事的大公司 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,149 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>♻️ 永續文章</h1>
-                <p>蕨積每日文章 - 永續分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #2c7a4d;">📌 永續</div>
-                        <h1 class="latest-title">永續投資入門：用錢投票給未來</h1>
-                        <div class="latest-date">📅 2026-04-20</div>
-                        <div class="latest-content">開門見山：用你的錢，為更好的未來投票你可能聽過「永續發展」，但你知道你的投資選擇也能推動永續嗎？永續投資（Sustainable Investing）就是將資金投入那些重視環境保護（E）、社會責任（S）和公司治理（G）的企業，簡稱ESG投資。這不只是追求財務回報，更是用你的錢「投票」，支持那些對世界有正面影響的公司，讓你的投資成為改變的力量。什麼是永續投資？問：永續投資聽起來很抽象，具體是在投資什麼？答：永續投資的核心是ESG三大面向。環境（E）指的是企業如何應對氣候變遷、減少污染、保護生物多樣性等，例如投資再生能源公司或低碳科技。社會（S）關注人權、勞工權益、產品安全、社區關係等，像支持公平...</div>
-                        <a href="2026-04-20-永續投資入門：用錢投票給未來.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-永續投資入門：用錢投票給未來.html">永續投資入門：用錢投票給未來</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-環保旅遊對比指南：低碳出遊選擇.html">環保旅遊對比指南：低碳出遊選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-減塑新生活：塑膠袋外的綠色選擇.html">減塑新生活：塑膠袋外的綠色選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-永續飲食：從餐桌改變世界.html">永續飲食：從餐桌改變世界</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-企業永續案例：做對事的大公司.html">企業永續案例：做對事的大公司</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-屋頂上的發電廠：我家如何靠陽光和微風省下一半電費.html">屋頂上的發電廠：我家如何靠陽光和微風省下一半電費</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-企業賺錢也能救地球？三個顛覆你想像的永續實戰案例.html">企業賺錢也能救地球？三個顛覆你想像的永續實戰案例</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍.html">衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-你今天「吃」永續了嗎？餐桌上的美味革命.html">你今天「吃」永續了嗎？餐桌上的美味革命</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html">**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活圈.html">從日常小事做起，打造你的永續生活圈</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？.html">從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活提案.html">從日常小事做起，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">企業永續案例：做對事的大公司</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>企業永續案例：那些做對事的大公司</h2><p>在當今全球永續發展浪潮中，越來越多企業將環境、社會與治理（ESG）納入核心策略。然而，不同企業的實踐方式與成效卻有顯著差異。本文透過對比分析，探討那些「做對事」的大公司如何將永續轉化為競爭優勢。</p><h2>永續策略的對比分析</h2><p>企業實踐永續的方式可分為兩大類：合規導向與價值創造導向。合規導向的企業通常僅滿足法規要求，將永續視為成本中心；而價值創造導向的企業則將永續融入商業模式，視為創新與成長的契機。</p><ul><li><strong>合規導向案例</strong>：部分傳統製造業僅進行末端污染控制，缺乏源頭減量設計，雖符合環保法規，但未能從根本降低環境衝擊。</li><li><strong>價值創造導向案例</strong>：如聯合利華（Unilever）推出「永續生活計畫」，將產品設計與永續目標結合，不僅減少包裝浪費，更帶動銷售成長。</li></ul><h2>環境效益的實踐差異</h2><p>在環境面向，企業的永續實踐可從能源使用、資源循環與生物多樣性等層面進行比較。</p><ul><li><strong>表面減碳 vs. 深度脫碳</strong>：有些企業僅購買碳權抵銷排放，而如蘋果（Apple）則推動供應鏈使用100%再生能源，並設計產品易於維修與回收。</li><li><strong>線性經濟 vs. 循環經濟</strong>：快時尚品牌常採用「生產-消費-丟棄」模式，而宜家家居（IKEA）則推動家具租賃、二手轉售與材料回收，延長產品生命週期。</li></ul><h2>社會影響的平衡藝術</h2><p>永續不僅關乎環境，更涉及社會公平與員工福祉。成功企業往往能在這兩者間取得平衡。</p><ul><li><strong>單一關注 vs. 全面關懷</strong>：部分企業僅聚焦環保議題，忽略社會責任；而如星巴克（Starbucks）則同時推動公平貿易咖啡採購、員工教育福利與社區參與計畫。</li><li><strong>短期公益 vs. 長期賦能</strong>：一次性捐款雖有助形象，但如微軟（Microsoft）的「AI for Earth」計畫，透過技術賦能非營利組織，創造長遠的環境解決方案。</li></ul><h2>永續競爭力的關鍵因素</h2><p>從對比中可見，真正「做對事」的企業具備以下共同點：</p><ol><li><strong>策略整合</strong>：將永續目標融入企業願景與日常營運，而非獨立部門的業務。</li><li><strong>透明溝通</strong>：定期發布永續報告，揭露進展與挑戰，建立利害關係人信任。</li><li><strong>創新驅動</strong>：將永續挑戰視為創新機會，開發新技術、產品或商業模式。</li></ol><p>這些企業證明，永續實踐不僅能降低風險、提升品牌價值，更能開拓新市場、吸引優秀人才，最終強化長期競爭力。相反地，僅做表面功夫的企業，可能在法規趨嚴、消費者意識抬頭下面臨淘汰。</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -408,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -467,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
