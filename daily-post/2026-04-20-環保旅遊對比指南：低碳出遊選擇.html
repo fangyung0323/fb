@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>♻️ 永續文章 - 蕨積每日文章</title>
+    <meta name="description" content="比較傳統旅遊與環保旅遊的差異，提供數據支持的低碳出遊實用建議。">
+    <meta name="article-summary" content="比較傳統旅遊與環保旅遊的差異，提供數據支持的低碳出遊實用建議。">
+    <meta name="article-keypoints" content='["交通方式碳排放對比", "住宿選擇的環境影響差異", "行程規劃的永續實踐"]'>
+    <title>環保旅遊對比指南：低碳出遊選擇 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,134 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>♻️ 永續文章</h1>
-                <p>蕨積每日文章 - 永續分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #2c7a4d;">📌 永續</div>
-                        <h1 class="latest-title">環保旅遊對比指南：低碳出遊選擇</h1>
-                        <div class="latest-date">📅 2026-04-20</div>
-                        <div class="latest-content">環保旅遊怎麼玩：低碳出遊指南隨著全球旅遊業復甦，旅遊產生的碳排放問題日益受到關注。根據聯合國世界旅遊組織數據，旅遊業約佔全球溫室氣體排放量的8%，其中交通運輸就佔了75%。傳統旅遊模式與環保旅遊在碳排放、資源消耗和環境影響上有顯著差異，本文將透過對比分析，提供數據支持的低碳出遊指南。交通方式：飛機 vs 火車在長途旅行中，交通選擇是碳排放的最大變數。以台北到高雄為例，搭乘飛機單程約產生45公斤二氧化碳當量，而搭乘高鐵僅產生約4.5公斤，相差達10倍之多。國際旅行方面，從台灣飛往日本東京的經濟艙航班，每人單程碳排放約為250公斤；若選擇分段搭乘火車與渡輪，碳排放可降低至80公斤以下，但旅行時間會...</div>
-                        <a href="2026-04-20-環保旅遊對比指南：低碳出遊選擇.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-環保旅遊對比指南：低碳出遊選擇.html">環保旅遊對比指南：低碳出遊選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-減塑新生活：塑膠袋外的綠色選擇.html">減塑新生活：塑膠袋外的綠色選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-屋頂上的發電廠：我家如何靠陽光和微風省下一半電費.html">屋頂上的發電廠：我家如何靠陽光和微風省下一半電費</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-企業賺錢也能救地球？三個顛覆你想像的永續實戰案例.html">企業賺錢也能救地球？三個顛覆你想像的永續實戰案例</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍.html">衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-你今天「吃」永續了嗎？餐桌上的美味革命.html">你今天「吃」永續了嗎？餐桌上的美味革命</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html">**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活圈.html">從日常小事做起，打造你的永續生活圈</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？.html">從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活提案.html">從日常小事做起，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">環保旅遊對比指南：低碳出遊選擇</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>環保旅遊怎麼玩：低碳出遊指南</h2><p>隨著全球旅遊業復甦，旅遊產生的碳排放問題日益受到關注。根據聯合國世界旅遊組織數據，旅遊業約佔全球溫室氣體排放量的8%，其中交通運輸就佔了75%。傳統旅遊模式與環保旅遊在碳排放、資源消耗和環境影響上有顯著差異，本文將透過對比分析，提供數據支持的低碳出遊指南。</p><h2>交通方式：飛機 vs 火車</h2><p>在長途旅行中，交通選擇是碳排放的最大變數。以台北到高雄為例，搭乘飛機單程約產生45公斤二氧化碳當量，而搭乘高鐵僅產生約4.5公斤，相差達10倍之多。國際旅行方面，從台灣飛往日本東京的經濟艙航班，每人單程碳排放約為250公斤；若選擇分段搭乘火車與渡輪，碳排放可降低至80公斤以下，但旅行時間會增加約50%。</p><p>數據顯示，短程旅行（500公里內）選擇鐵路或巴士，可比飛機減少70-90%的碳排放。即使是自駕遊，若選擇電動車而非燃油車，每公里碳排放也可減少60%以上。環保旅遊者會優先規劃「慢旅行」路線，減少飛行次數，並在目的地使用公共交通工具或自行車。</p><h2>住宿選擇：傳統飯店 vs 環保旅宿</h2><p>住宿業的能源消耗約佔旅遊業總碳排放的20%。傳統大型飯店平均每房每晚消耗水資源300-500公升，並產生1-2公斤的廢棄物；相比之下，獲得環保認證的旅宿（如綠色飯店、生態民宿）透過節水裝置、再生能源和廢棄物管理，可將水資源消耗降低40%，廢棄物減少50%。</p><p>根據國際永續旅遊協會研究，環保旅宿的能源消耗比傳統飯店低25-30%，部分甚至達到碳中和。選擇這類住宿不僅減少環境足跡，通常也能支持當地社區經濟。傳統旅遊者可能只關注價格和便利性，而環保旅遊者會主動查詢旅宿的永續認證（如Green Key、EarthCheck）和環保措施。</p><h2>行程規劃：觀光熱點 vs 深度體驗</h2><p>傳統旅遊常集中在熱門景點，導致「過度旅遊」問題，如威尼斯每年接待遊客超過2,500萬，遠超當地居民數的500倍，造成環境退化。環保旅遊則提倡「分散旅遊」，選擇非熱門時段或替代景點，減少對單一地區的壓力。</p><p>在活動選擇上，傳統旅遊可能包含高碳排項目如直升機觀光（每小時碳排放約150公斤）或大型郵輪（每人每日碳排放約30公斤）；環保旅遊則傾向低碳活動如徒步、單車導覽、文化工作坊等。飲食方面，選擇當地當季食材可比進口食材減少運輸碳排放達50-70%。</p><p>最重要的是，環保旅遊者會遵循「不留痕跡」原則，攜帶可重複使用的水瓶、餐具和購物袋，並參與當地的環境保護活動。根據計算，一個為期一周的環保旅遊行程，可比傳統旅遊減少40-60%的碳足跡，同時創造更深刻的旅行體驗。</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -393,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -452,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
