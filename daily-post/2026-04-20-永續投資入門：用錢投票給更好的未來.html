@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>♻️ 永續文章 - 蕨積每日文章</title>
+    <meta name="description" content="永續投資透過資金支持對環境和社會有益的企業，創造長期價值。">
+    <meta name="article-summary" content="永續投資透過資金支持對環境和社會有益的企業，創造長期價值。">
+    <meta name="article-keypoints" content='["永續投資與傳統投資的差異", "ESG評分如何影響投資決策", "個人如何開始永續投資"]'>
+    <title>永續投資入門：用錢投票給更好的未來 - 蕨積每日文章</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -256,154 +259,61 @@
         flex-wrap: wrap;
       }
     }
-    .daily-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-    .page-header { text-align: center; margin-bottom: 2rem; }
-    .page-header h1 { color: var(--moss); font-size: 2rem; font-family: 'Noto Serif TC', serif; }
-    .page-header p { color: var(--stone); margin-top: 0.5rem; }
-    
-    .two-columns { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .main-col { flex: 3; min-width: 250px; }
-    
-    .latest-article {
-        background: white;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    .article-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
     }
-    .latest-category {
+    .article-category {
         display: inline-block;
+        background: #2c7a4d;
         color: white;
         padding: 0.2rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         margin-bottom: 1rem;
     }
-    .latest-title { font-size: 1.8rem; color: var(--moss); margin-bottom: 0.5rem; }
-    .latest-date { color: var(--stone); margin-bottom: 1.5rem; font-size: 0.9rem; }
-    .latest-content { line-height: 1.8; }
-    .read-more { display: inline-block; margin-top: 1rem; color: var(--fern); text-decoration: none; font-weight: 500; }
-    
-    .section-title { font-size: 1.2rem; color: var(--moss); border-bottom: 2px solid #e0d6cc; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .past-list { list-style: none; }
-    .past-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0e8e0; }
-    .past-link { font-size: 0.95rem; font-weight: 500; color: var(--fern); text-decoration: none; display: block; }
-    .past-link:hover { text-decoration: underline; }
-    .past-meta { font-size: 0.7rem; color: #aaa; margin-top: 0.25rem; }
-    .past-badge { display: inline-block; font-size: 0.65rem; padding: 0.1rem 0.5rem; border-radius: 12px; color: white; margin-right: 0.5rem; }
-    
+    .article-title {
+        font-size: 2rem;
+        color: var(--moss);
+        margin-bottom: 0.5rem;
+        font-family: 'Noto Serif TC', serif;
+    }
+    .article-date {
+        color: var(--stone);
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+    .article-content {
+        line-height: 1.8;
+        font-size: 1rem;
+    }
     @media (max-width: 768px) {
-        .two-columns { flex-direction: column; }
-        .latest-title { font-size: 1.4rem; }
-        .daily-container { padding: 0 1rem; }
+        .article-title { font-size: 1.5rem; }
+        .article-container { padding: 0 1rem; }
     }
     </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
-    
     <main class="content">
-        <div class="daily-container">
-            <div class="page-header">
-                <h1>♻️ 永續文章</h1>
-                <p>蕨積每日文章 - 永續分類精選</p>
-            </div>
-            
-            <div class="two-columns">
-                <div class="main-col">
-                    
-                    <div class="latest-article">
-                        <div class="latest-category" style="background: #2c7a4d;">📌 永續</div>
-                        <h1 class="latest-title">永續投資入門：用錢投票給未來</h1>
-                        <div class="latest-date">📅 2026-04-20</div>
-                        <div class="latest-content">開門見山：用你的錢，為更好的未來投票你可能聽過「永續發展」，但你知道你的投資選擇也能推動永續嗎？永續投資（Sustainable Investing）就是將資金投入那些重視環境保護（E）、社會責任（S）和公司治理（G）的企業，簡稱ESG投資。這不只是追求財務回報，更是用你的錢「投票」，支持那些對世界有正面影響的公司，讓你的投資成為改變的力量。什麼是永續投資？問：永續投資聽起來很抽象，具體是在投資什麼？答：永續投資的核心是ESG三大面向。環境（E）指的是企業如何應對氣候變遷、減少污染、保護生物多樣性等，例如投資再生能源公司或低碳科技。社會（S）關注人權、勞工權益、產品安全、社區關係等，像支持公平...</div>
-                        <a href="2026-04-20-永續投資入門：用錢投票給未來.html" class="read-more">🔗 閱讀全文 →</a>
-                    </div>
-                    
-                    <div class="section-title">📖 過往文章</div>
-                    <ul class="past-list">
-                        
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-永續投資入門：用錢投票給未來.html">永續投資入門：用錢投票給未來</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-永續投資入門：用錢投票給更好的未來.html">永續投資入門：用錢投票給更好的未來</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-環保旅遊對比指南：低碳出遊選擇.html">環保旅遊對比指南：低碳出遊選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-減塑新生活：塑膠袋外的綠色選擇.html">減塑新生活：塑膠袋外的綠色選擇</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-永續飲食：從餐桌改變世界.html">永續飲食：從餐桌改變世界</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-20-企業永續案例：做對事的大公司.html">企業永續案例：做對事的大公司</a>
-                            <div class="past-meta">📅 2026-04-20</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-屋頂上的發電廠：我家如何靠陽光和微風省下一半電費.html">屋頂上的發電廠：我家如何靠陽光和微風省下一半電費</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-04-16-企業賺錢也能救地球？三個顛覆你想像的永續實戰案例.html">企業賺錢也能救地球？三個顛覆你想像的永續實戰案例</a>
-                            <div class="past-meta">📅 2026-04-16</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍.html">衣櫃裡的永續革命：五個步驟，讓舊衣變身循環經濟生力軍</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-31-你今天「吃」永續了嗎？餐桌上的美味革命.html">你今天「吃」永續了嗎？餐桌上的美味革命</a>
-                            <div class="past-meta">📅 2026-03-31</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**.html">**標題：從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？**</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活圈.html">從日常小事做起，打造你的永續生活圈</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事開始，打造你的永續生活提案.html">從日常小事開始，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？.html">從一杯咖啡開始的永續革命：你的日常選擇，如何改變世界？</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                        <li class="past-item">
-                            <span class="past-badge" style="background: #2c7a4d;">永續</span>
-                            <a class="past-link" href="2026-03-27-從日常小事做起，打造你的永續生活提案.html">從日常小事做起，打造你的永續生活提案</a>
-                            <div class="past-meta">📅 2026-03-27</div>
-                        </li>
-                    </ul>
+        <div class="article-container">
+            <div class="article-category">📌 永續</div>
+            <h1 class="article-title">永續投資入門：用錢投票給更好的未來</h1>
+            <div class="article-date">📅 2026年04月20日</div>
+            <div class="article-content"><h2>永續投資入門：用錢投票給更好的未來</h2><p>Q：什麼是永續投資？為什麼它越來越受關注？</p><p>A：永續投資是指在投資決策中，不僅考慮財務回報，還考慮環境、社會和公司治理（ESG）因素的投資方式。隨著氣候變遷、社會不平等加劇，越來越多人意識到，我們的投資選擇可以影響企業行為，進而推動世界朝更永續的方向發展。用錢投票，就是支持那些對地球和人類友善的企業。</p><h2>傳統投資 vs 永續投資：對比分析</h2><p>Q：傳統投資和永續投資有什麼不同？</p><p>A：讓我們從三個層面來比較：</p><p>1. 目標差異：傳統投資主要追求財務報酬最大化，通常只關注股價、股息等經濟指標。永續投資則追求「雙重回報」——既要財務收益，也要正向的環境和社會影響。</p><p>2. 風險評估：傳統投資側重市場風險、信用風險等財務風險。永續投資還納入ESG風險，例如公司是否面臨氣候變遷的實體風險、是否有勞工爭議可能損害品牌價值。</p><p>3. 時間框架：傳統投資往往關注短期季度表現，永續投資更重視長期價值創造，因為ESG表現好的公司通常更具韌性，能適應未來挑戰。</p><p>相同點是兩者都追求投資回報，都需要專業分析，都涉及風險管理。不同點在於永續投資有更全面的評估框架和更長遠的視野。</p><h2>ESG評分：永續投資的關鍵工具</h2><p>Q：ESG評分是什麼？如何幫助投資決策？</p><p>A：ESG評分是評估企業在環境（E）、社會（S）、治理（G）表現的量化指標。環境包括碳排放、資源使用；社會包括員工福利、社區關係；治理包括董事會多元性、商業道德。</p><p>高ESG評分的公司通常表示：1. 較好的風險管理，避免環境罰款或公關危機 2. 更高的營運效率，如節能減碳降低成本 3. 更強的員工留任和客戶忠誠度。研究顯示，ESG表現好的公司長期財務表現往往優於同業。</p><h2>如何開始你的永續投資之旅？</h2><p>Q：個人投資者可以怎麼做？</p><p>A：你可以從三步驟開始：</p><p>1. 了解自己的價值觀：你最關心氣候行動、性別平等還是公司透明度？這會影響你選擇的永續投資主題。</p><p>2. 選擇合適工具：最簡單的方式是投資ESG ETF或永續主題基金，這些已由專業團隊篩選符合ESG標準的企業。也可以直接研究個別公司的ESG報告。</p><p>3. 持續學習與參與：關注企業的永續發展報告，參加股東會行使投票權，督促企業改善ESG實踐。</p><p>記住，永續投資不是全有或全無的選擇。你可以從部分資產配置開始，逐步增加比例。最重要的是，開始行動——每一筆投資都是對未來世界的投票。</p><p>🌿 蕨積 - 讓生活多一點綠</p></div>
+          
+            <div class="footer">
+                <br>每日一篇，與你一起成長<br><br>
+                <div class="nav-links">
+                    <a href="index.html">← 返回每日文章</a> &nbsp;|&nbsp;
+                    <a href="sustainability.html">← 返回永續文章分類</a> &nbsp;|&nbsp;
+                    <a href="../shop.html">🌱 植物選品</a> &nbsp;|&nbsp;
+                    <a href="../consult.html">💚 綠色服務</a>
                 </div>
             </div>
         </div>
     </main>
-    
     <footer>
     <ul class="footer-links">
       <li><a href="/shop.html">植物選品</a></li>
@@ -413,9 +323,7 @@
     </ul>
     <p class="footer-copy">© 2026 蕨積 FernBrom . All rights reserved.</p>
   </footer>
-    
     <script>
-        
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/nav.html')
     .then(response => response.text())
@@ -472,7 +380,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (typeof lucide !== 'undefined') lucide.createIcons();
   }
 });
-
-    </script>
+</script>
 </body>
 </html>
